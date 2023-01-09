@@ -16,11 +16,11 @@ const LoginCard = () => {
       <form className={loginCardStyles.form}>
         <div className={loginCardStyles.textbox}>
           <input type="email" placeholder="Username" />
-          <span class={loginCardStyles.material-symbols-outlined}> account_circle </span>
+          {/* <span class={loginCardStyles.material-symbols-outlined}> account_circle </span> */}
         </div>
         <div className={loginCardStyles.textbox}>
           <input type="password" placeholder="Password" />
-          <span className={loginCardStyles.material-symbols-outlined}> lock </span>
+          {/* <span className={loginCardStyles.material-symbols-outlined}> lock </span> */}
         </div>
         <button type="submit">LOGIN</button>
         {/* Here we need a valid link for resetting the password: */}
