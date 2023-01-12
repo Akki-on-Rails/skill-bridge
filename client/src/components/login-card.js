@@ -1,24 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import * as loginCardStyles from './login-card.module.scss';
+import './login-card.module.scss';
 
 const LoginCard = () => {
   return (
-    <div className={loginCardStyles.card}>
+    <div className='card'>
       {/* here we should insert the Logo: */}
-      <div class={loginCardStyles.logo}>
+      <div class='logo'>
         {/* <img src="avatar.png" /> */}
       </div>
       <h2>Login</h2>
       <h3>Welcome! Please enter your login data.</h3>
       {/* I guess we need to edit the form and make it 'REACTish' */}
-      <form className={loginCardStyles.form}>
-        <div className={loginCardStyles.textbox}>
+      <form className='form'>
+        <div className='textbox'>
           <input type="email" placeholder="Username" />
           {/* <span class={loginCardStyles.material-symbols-outlined}> account_circle </span> */}
         </div>
-        <div className={loginCardStyles.textbox}>
+        <div className='textbox'>
           <input type="password" placeholder="Password" />
           {/* <span className={loginCardStyles.material-symbols-outlined}> lock </span> */}
         </div>
