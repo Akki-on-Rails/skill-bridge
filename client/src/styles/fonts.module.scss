@@ -1,0 +1,74 @@
+// Font for headers etc. is:'Sofia Sans'
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+// Font for text blocks etc. is: 'Lato'
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+$header-font: 'Sofia Sans', sans-serif;
+$body-font: 'Lato', 'Calibri', sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+}
+
+* {
+  font-family: $body-font;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h1, h6 {
+  font-weight: 900;
+}
+
+h2, h5 {
+  font-weight: 800;
+}
+
+h3, h4 {
+  font-weight: 700;
+}
+
+h2, h4, h5 {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+h1, h2, h3 {
+  line-height: 40px;
+}
+
+*, h4, h5, h6 {
+  line-height: 20px;
+}
+
+strong {
+  font-weight: 800;
+}
+
+em {
+  font-style: italic;
+}

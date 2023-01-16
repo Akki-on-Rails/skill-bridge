@@ -1,3 +1,6 @@
+@import '../styles/colors.module.scss';
+@import '../styles/fonts.module.scss';
+
 * {
   box-sizing: border-box;
 }
@@ -47,16 +50,12 @@
 } */
 
 .login > h2 {
-  font-size: 36px;
-  font-weight: 500;
   margin: 0 0 4px;
 }
 
 .login > h3 {
   color: rgba(255, 255, 255, 0.38);
   margin: 0 0 30px;
-  font-weight: 500;
-  font-size: 16px;
 }
 
 /* got problems with styles for the 'login-form' class.
@@ -88,15 +87,12 @@ button {
   height: 60px;
   outline: none;
   padding: 0;
-  font-family: inherit;
-  font-size: 16px;
   border-radius: 8px;
 }
 
 input {
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.1);
-  font-size: 18px;
   padding: 0 20px 0 50px;
   color: inherit;
 }
@@ -112,14 +108,14 @@ input:focus ~ span {
 button {
   cursor: pointer;
   background: #157ae1;
-  color: #f9f9f9;
+  color: $c-background;
   border: 0;
   font-weight: 600;
   letter-spacing: 2px;
 }
 
 a {
-  color: #157ae1;
+  color: $c-contrast;
   font-size: 12px;
   text-align: left;
   text-decoration: none;
