@@ -10,40 +10,41 @@ const Footer = () => {
     <footer className='footer-wrapper'>
       <div className='logo'>
         {/* Here we need a Logo and/or Slogan */}
-        <p>SkillBridge</p>
+        <h1>SkillBridge</h1>
       </div>
-      <div className='section-1'>
-        <h4>Students</h4>
-        <ul>
-          <li>Student Profile</li>
-          <li>Looking for Jobs</li>
-          <li>My potential Jobs</li>
-        </ul>
-      </div>
-      <div className='section-2'>
-        <h4>Company</h4>
-        <ul>
-          <li>Company Profile</li>
-          <li>Looking for Candidates</li>
-          <li>My Candidates</li>
-        </ul>
-      </div>
-      <div className='section-3'>
-        <h4>Other</h4>
-        <ul>
-          <li>Contact</li>
-          <li>FAQ</li>
-          <li>Resources</li>
-        </ul>
-      </div>
-      <div className='social'>
-        <h4>Students</h4>
-        <ul>
-          <li><i className="fa-brands fa-square-instagram" /></li>
-          <li><i className="fa-brands fa-square-snapchat" /></li>
-          <li><i className="fa-brands fa-twitch" /></li>
-          <li><i className="fa-brands fa-youtube" /></li>
-        </ul>
+      <div className='section-container'>
+        <div className='section-1'>
+          <h4>Students</h4>
+          <ul>
+            <li>Student Profile</li>
+            <li>Looking for Jobs</li>
+            <li>My potential Jobs</li>
+          </ul>
+        </div>
+        <div className='section-2'>
+          <h4>Company</h4>
+          <ul>
+            <li>Company Profile</li>
+            <li>Looking for Candidates</li>
+            <li>My Candidates</li>
+          </ul>
+        </div>
+        <div className='section-3'>
+          <h4>Other</h4>
+          <ul>
+            <li>Contact</li>
+            <li>FAQ</li>
+            <li>Resources</li>
+          </ul>
+        </div>
+        <div className='social'>
+          <ul>
+            <li><i className="fa-brands fa-square-instagram" /></li>
+            <li><i className="fa-brands fa-square-snapchat" /></li>
+            <li><i className="fa-brands fa-twitch" /></li>
+            <li><i className="fa-brands fa-youtube" /></li>
+          </ul>
+        </div>
       </div>
       <div className='adress'>
         <table>

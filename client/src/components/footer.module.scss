@@ -1,0 +1,84 @@
+@import '../styles/colors.module.scss';
+@import '../styles/fonts.module.scss';
+
+a {
+  &:active,
+  &:focus,
+  &:hover {
+    color: $c-contrast;
+  }
+  color: $c-text;
+}
+// classes don't work
+.legal-section a {
+  padding-right: 10px;
+}
+
+footer a {
+  font-size: 0.5rem;
+}
+
+footer {
+  color: $c-text;
+  font-size: 0.5rem;
+  background-color: $c-secondary;
+  height: 100%;
+  // border: 1px solid red;
+  padding: 0 1rem 0.3rem;
+}
+
+footer h4 {
+  line-height: 0;
+  margin-bottom: -0.2rem;
+}
+// classes don't work
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+	grid-gap: 0.75rem;
+
+
+	// grid-template-areas:
+	// 	"section-1"
+	// 	"section-2"
+	// 	"section-3"
+	// 	"social";
+	// grid-template-columns: fit-content;
+	// justify-items: stretch;
+	// max-height: min-content;
+	// width: inherit;
+}
+
+@media (min-width: 600) {
+  .section-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+// @media screen and (min-width: 600px) {
+//   grid-template-areas: "section-1 section-2" "section-3 social"
+// }
+
+// @media screen and (min-width: 1200px) {
+// grid-template-areas: "section-1 section-2 section-3 social"
+// }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-1 {
+  grid-area: section-1;
+}
+
+.section-2 {
+  grid-area: section-2;
+}
+
+.section-3 {
+  grid-area: section-3;
+}
+
+.social {
+  grid-area: social;
+}
