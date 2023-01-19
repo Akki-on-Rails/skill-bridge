@@ -1,19 +1,19 @@
 import React from "react";
 
-import './footer.module.scss';
+import styles from './footer.module.scss';
 import "../assets/css/fontawesome.css"
 import "../assets/css/brands.css"
 import "../assets/css/solid.css"
 
 const Footer = () => {
   return (
-    <footer className='footer-wrapper'>
-      <div className='logo'>
+    <footer className={styles.footer_wrapper}>
+      <div className={styles.logo}>
         {/* Here we need a Logo and/or Slogan */}
         <h1>SkillBridge</h1>
       </div>
-      <div className='section-container'>
-        <div className='section-1'>
+      <div className={styles.section_container}>
+        <div className={styles.section_1}>
           <h4>Students</h4>
           <ul>
             <li>Student Profile</li>
@@ -21,7 +21,7 @@ const Footer = () => {
             <li>My potential Jobs</li>
           </ul>
         </div>
-        <div className='section-2'>
+        <div className={styles.section_2}>
           <h4>Company</h4>
           <ul>
             <li>Company Profile</li>
@@ -29,7 +29,7 @@ const Footer = () => {
             <li>My Candidates</li>
           </ul>
         </div>
-        <div className='section-3'>
+        <div className={styles.section_3}>
           <h4>Other</h4>
           <ul>
             <li>Contact</li>
@@ -37,7 +37,7 @@ const Footer = () => {
             <li>Resources</li>
           </ul>
         </div>
-        <div className='social'>
+        <div className={styles.social}>
           <ul>
             <li><i className="fa-brands fa-square-instagram" /></li>
             <li><i className="fa-brands fa-square-snapchat" /></li>
@@ -46,7 +46,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className='adress'>
+      <div className={styles.address}>
         <table>
           <tr>
             <td>SkillBridge GmbH</td>
@@ -60,7 +60,7 @@ const Footer = () => {
         Sign up for free
         {/* Here a Link to our Sign up page */}
       </button>
-      <div className='legal-section'>
+      <div className={styles.legal_section}>
         <a href="#">Impressum</a>
         <a href="#">Datenschutz</a>
         <a href="#">AGB & Nutzungsbedingungen</a>

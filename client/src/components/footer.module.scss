@@ -10,7 +10,7 @@ a {
   color: $c-text;
 }
 // classes don't work
-.legal-section a {
+.legal_section a {
   padding-right: 10px;
 }
 
@@ -32,7 +32,7 @@ footer h4 {
   margin-bottom: -0.2rem;
 }
 // classes don't work
-.section-container {
+.section_container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -51,7 +51,7 @@ footer h4 {
 }
 
 @media (min-width: 600) {
-  .section-container { grid-template-columns: repeat(2, 1fr); }
+  .section_container { grid-template-columns: repeat(2, 1fr); }
 }
 
 // @media screen and (min-width: 600px) {
@@ -67,18 +67,26 @@ ul {
   padding: 0;
 }
 
-.section-1 {
+.section_1 {
   grid-area: section-1;
 }
 
-.section-2 {
+.section_2 {
   grid-area: section-2;
 }
 
-.section-3 {
+.section_3 {
   grid-area: section-3;
 }
 
 .social {
   grid-area: social;
+}
+
+.address {
+  color: red;
+}
+
+.legal_section {
+  color: turquoise;
 }
