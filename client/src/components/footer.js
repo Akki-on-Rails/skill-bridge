@@ -12,30 +12,32 @@ const Footer = () => {
         {/* Here we need a Logo and/or Slogan */}
         <h1>SkillBridge</h1>
       </div>
-      <div className={styles.section_container}>
-        <div className={styles.section_1}>
-          <h4>Students</h4>
-          <ul>
-            <li>Student Profile</li>
-            <li>Looking for Jobs</li>
-            <li>My potential Jobs</li>
-          </ul>
-        </div>
-        <div className={styles.section_2}>
-          <h4>Company</h4>
-          <ul>
-            <li>Company Profile</li>
-            <li>Looking for Candidates</li>
-            <li>My Candidates</li>
-          </ul>
-        </div>
-        <div className={styles.section_3}>
-          <h4>Other</h4>
-          <ul>
-            <li>Contact</li>
-            <li>FAQ</li>
-            <li>Resources</li>
-          </ul>
+      <div className={styles.link_wrapper}>
+        <div className={styles.section_container}>
+          <div className={styles.section_1}>
+            <h4>Students</h4>
+            <ul>
+              <li>Student Profile</li>
+              <li>Looking for Jobs</li>
+              <li>My potential Jobs</li>
+            </ul>
+          </div>
+          <div className={styles.section_2}>
+            <h4>Company</h4>
+            <ul>
+              <li>Company Profile</li>
+              <li>Looking for Candidates</li>
+              <li>My Candidates</li>
+            </ul>
+          </div>
+          <div className={styles.section_3}>
+            <h4>Other</h4>
+            <ul>
+              <li>Contact</li>
+              <li>FAQ</li>
+              <li>Resources</li>
+            </ul>
+          </div>
         </div>
         <div className={styles.social}>
           <ul>
