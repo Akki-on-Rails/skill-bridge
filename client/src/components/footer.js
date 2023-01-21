@@ -49,25 +49,20 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.address}>
-        <table>
-          <tr>
-            <td>SkillBridge GmbH</td>
-            <td>Musterstraße 34, 20034 Hamburg</td>
-            <td>Phone: 0123 456 789</td>
-            <td>Email: info@skillbridge.de</td>
-          </tr>
-        </table>
-      </div>
-      <button>
+        <p>SkillBridge GmbH  |  Musterstraße 34, 20034 Hamburg  |  Phone: 0123 456 789  |  Email: info@skillbridge.de</p>
+        <button>
         Sign up for free
         {/* Here a Link to our Sign up page */}
       </button>
+      </div>
+
       <div className={styles.legal_section}>
-        <a href="#">Impressum</a>
-        <a href="#">Datenschutz</a>
-        <a href="#">AGB & Nutzungsbedingungen</a>
+        <p>
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB & Nutzungsbedingungen</a>
         {/* For the copyright we need to insert the current year with js */}
-        <p>© 2023 All Rights Reserved. Skillbridge</p>
+        © 2023 All Rights Reserved. Skillbridge</p>
       </div>
     </footer>
   )
