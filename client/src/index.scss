@@ -1,25 +1,32 @@
 @import './styles/colors.module.scss';
 @import './styles/fonts.module.scss';
 
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100vw;
+  font-family: $body-font;
+  box-sizing: border-box;
+	background-color: $c-background;
+}
+
+.body_wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  border-right: 1.5rem solid $c-background;
+  border-left: 1.5rem solid $c-background;
+  border-bottom: 3rem solid $c-background;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-body {
-  /* height: 100%; */
-  margin: 1rem;
-	box-sizing: border-box;
-	background-color: $c-background;
 }
 
 @keyframes gradient {
@@ -28,20 +35,8 @@ body {
   }
 }
 
-/* body {
-  display: grid;
-  place-items: center;
-  margin: 0;
-  padding: 0 24px;
-  background-image: url("images/bg-wave.svg");
-  background-size: 2000px 1000px;
-  background-position: -500px 0;
-  color: #f9f9f9;
-  animation: gradient 40s infinite alternate linear;
-} */
-
-@media (width > 500px) {
-  body {
-    padding: 0;
-  }
-}
+// @media (width > 500px) {
+//   body {
+//     padding: 0;
+//   }
+// }

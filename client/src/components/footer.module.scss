@@ -21,15 +21,16 @@ a {
   font-weight: $b-font-weight;
   background-color: $c-secondary;
   height: 100%;
-  padding: .1rem 1rem 0.3rem;
-  margin-top: 1rem;
+  padding: 1.5rem 2rem 1rem;
+  // margin-bottom: 1rem;
+  margin-top: auto;
 }
 
 
 .link_wrapper {
   display: flex;
   justify-content: space-between;
-  // flex-grow: 1;
+  margin-top: 1.5rem;
 }
 
 .section_container {
@@ -37,8 +38,9 @@ a {
   display: grid;
   justify-content: start;
   justify-items: start;
-	grid-gap: 1rem;
+	grid-gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2rem;
  }
 
 /* Screen larger than 600px? 2 column */
@@ -53,16 +55,13 @@ a {
 
 .social {
   width: 25%;
-  // padding-top: .5rem;
   font-size: 1.2rem;
   line-height: 1.35rem;
-  margin-top: 0;
-  padding-top: 0;
+
 }
 
 .footer_wrapper h4 {
-  // line-height: 0;
-  margin: 0 0 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 ul {
@@ -73,7 +72,3 @@ ul {
 .address {
   padding-bottom: 1rem;
 }
-
-// .legal_section {
-//   color: turquoise;
-// }
