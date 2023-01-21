@@ -1,0 +1,30 @@
+@import '../styles/colors.module.scss';
+@import '../styles/fonts.module.scss';
+
+.btn-flat {
+  color: $c-background;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: $c-primary;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: $c-secondary;
+  color: $c-background;
+}
+
+.btn-gradient {
+  color: $c-background;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient($c-tertiary, $c-secondary);
+  transition: background 0.3s ease;
+  border: 1px solid $c-secondary;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient($c-secondary, $c-primary);
+  color: white;
+}
