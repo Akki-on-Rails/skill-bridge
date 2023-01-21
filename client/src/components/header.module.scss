@@ -1,0 +1,15 @@
+@import '../styles/colors.module.scss';
+@import '../styles/fonts.module.scss';
+
+.header_wrapper {
+  color: $c-background;
+  font-size: $b-font-size;
+  line-height: $b-line-height;
+  font-weight: $b-font-weight;
+  background-color: $c-secondary;
+  height: 75px;
+  padding: 1.5rem 2rem 1rem;
+  // margin-bottom: 1rem;
+  margin-bottom: auto;
+  border-radius: 0 0 20px 20px;
+}
