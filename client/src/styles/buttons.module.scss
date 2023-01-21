@@ -1,20 +1,21 @@
 @import '../styles/colors.module.scss';
 @import '../styles/fonts.module.scss';
 
-.btn-flat {
+.btn_flat {
   color: $c-background;
   padding: 8px 24px;
   border-radius: 4px;
   background: $c-primary;
   transition: background 0.3s ease;
+  white-space: nowrap;
 }
 
-.btn-flat:hover {
-  background: $c-secondary;
+.btn_flat:hover {
+  background: $c-primary-65;
   color: $c-background;
 }
 
-.btn-gradient {
+.btn_gradient {
   color: $c-background;
   padding: 8px 24px;
   border-radius: 4px;
@@ -22,9 +23,10 @@
   background: linear-gradient($c-tertiary, $c-secondary);
   transition: background 0.3s ease;
   border: 1px solid $c-secondary;
+  white-space: nowrap;
 }
 
-.btn-gradient:hover {
+.btn_gradient:hover {
   background: linear-gradient($c-secondary, $c-primary);
   color: white;
 }
