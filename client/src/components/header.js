@@ -12,7 +12,16 @@ const Header = () => {
         {/* Here we need a Logo and/or Slogan */}
         <h1>SkillBridge</h1>
       </div>
+      <div className={styles.menu}>
+        <a href="#">student profile</a>
+        <a href="#">looking for jobs</a>
+        <a href="#">potential jobs</a>
+        <a href="#">resources</a>
+        <a href="#">contact</a>
+      </div>
+      <div className={styles.login}>
 
+      </div>
     </header>
   )
 }
