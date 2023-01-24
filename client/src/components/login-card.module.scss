@@ -20,8 +20,7 @@
   width: 90%;
   padding: 70px 30px 44px;
   border-radius: 22px;
-  border: 2px solid red;
-  background: #161616;
+  background: $c-tertiary;
   text-align: center;
 }
 
@@ -51,10 +50,11 @@
 
 .login > h2 {
   margin: 0 0 4px;
+  color: $c-primary;
 }
 
 .login > h3 {
-  color: rgba(255, 255, 255, 0.38);
+  color: $c-text;
   margin: 0 0 30px;
 }
 
