@@ -10,11 +10,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
 }
 
-* {
-  font-family: $body-font;
-  font-size: 1rem;
-  font-weight: 300;
-}
+
+$b-font-size: .8rem;
+$b-font-weight: 300;
+$b-line-height: 1.1rem;
 
 h1, h6 {
   font-weight: 900;
@@ -37,7 +36,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+
+  font-size: 1.85rem;
   font-style: italic;
 }
 
@@ -46,11 +46,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 h5 {
-  font-size: 1.85rem;
+  font-size: 0.9rem;
 }
 
 h6 {
@@ -61,7 +61,8 @@ h1, h2, h3 {
   line-height: 2.5rem;
 }
 
-*, h4, h5, h6 {
+
+h4, h5, h6 {
   line-height: 1.25rem;
 }
 
