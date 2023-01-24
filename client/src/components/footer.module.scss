@@ -1,0 +1,72 @@
+@import '../styles/colors.module.scss';
+@import '../styles/fonts.module.scss';
+
+a {
+  &:active,
+  &:focus,
+  &:hover {
+    color: $c-contrast;
+  }
+  color: $c-background;
+}
+// classes don't work
+.legal_section a {
+  padding-right: 15px;
+}
+
+.footer_wrapper {
+  color: $c-background;
+  font-size: $b-font-size;
+  line-height: $b-line-height;
+  font-weight: $b-font-weight;
+  background-color: $c-secondary;
+  height: 100%;
+  padding: 1.5rem 2rem 1rem;
+  // margin-bottom: 1rem;
+  margin-top: auto;
+}
+
+.link_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.section_container {
+  max-width: 1200px;
+  display: grid;
+  justify-content: start;
+  justify-items: start;
+	grid-gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2rem;
+ }
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .section_container { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .section_container { grid-template-columns: repeat(4, 1fr); }
+}
+
+.social {
+  width: 25%;
+  font-size: 1.2rem;
+  line-height: 1.35rem;
+}
+
+.footer_wrapper h4 {
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+.address {
+  display: flex;
+  padding-bottom: 1rem;
+}
