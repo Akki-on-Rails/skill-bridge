@@ -15,6 +15,9 @@ const Header = () => {
         {/* Here we need a Logo and/or Slogan */}
         <h1>SkillBridge</h1>
       </div>
+      {/* for the menu I recommend a conditional based on screen size: */}
+      {/* if > 100px show horizontal menu */}
+      {/* else show burger menu */}
       <div className={styles.menu}>
         <a href="#">student profile</a>
         <a href="#">looking for jobs</a>
