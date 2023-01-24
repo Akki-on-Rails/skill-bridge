@@ -4,6 +4,7 @@ import './index.scss';
 import LoginCard from './components/login-card';
 import Footer from './components/footer';
 import Header from './components/header';
+// import ImageComponent from './components/image-slider';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +13,8 @@ root.render(
     <body>
       <div className={ 'body_wrapper' }>
         <Header />
-        <LoginCard />
+        {/* <LoginCard /> */}
+        {/* <ImageComponent /> */}
         <Footer />
       </div>
     </body>

@@ -23,6 +23,9 @@ const Header = () => {
         <a href="#">contact</a>
       </div>
       <div className={styles.login}>
+        <div className={styles.user_switch}>
+          <a href='#'>Student</a>  |  <a href='#'>Company</a>
+        </div>
         {/* here we need to insert user images dynamicly from DB */}
         {/* also we have to create a conditional: */}
         {/* if logged in show avatar and 'log out' */}
