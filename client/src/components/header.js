@@ -23,6 +23,7 @@ const Header = () => {
         <a href="#">contact</a>
       </div>
       <div className={styles.login}>
+        {/* here we need a switch/toggle */}
         <div className={styles.user_switch}>
           <a href='#'>Student</a>  |  <a href='#'>Company</a>
         </div>
