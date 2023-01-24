@@ -1,8 +1,8 @@
 require('dotenv').config();
-const express = require('express');
-const mongoose = require('mongoose')
-const studentRoutes = require('./routes/students')
-const companyRoutes = require('./routes/companies')
+const express =require( 'express')
+const  mongoose =require( 'mongoose')
+const studentRoutes =require( './routes/students')
+const companyRoutes =require('./routes/companies')
 
 //express app
 const app = express()
