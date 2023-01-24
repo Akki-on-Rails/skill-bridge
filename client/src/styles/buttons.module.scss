@@ -3,7 +3,7 @@
 
 .btn_flat {
   color: $c-background;
-  padding: 8px 24px;
+  padding: 6px 18px;
   border-radius: 4px;
   background: $c-primary;
   transition: background 0.3s ease;
@@ -17,7 +17,7 @@
 
 .btn_gradient {
   color: $c-background;
-  padding: 8px 24px;
+  padding: 6px 18px;
   border-radius: 4px;
   font-weight: bold;
   background: linear-gradient($c-tertiary, $c-secondary);
