@@ -12,27 +12,48 @@
   font-weight: $b-font-weight;
   background-color: $c-secondary;
   height: 75px;
-  padding: 1.5rem 2rem 1rem;
-  // margin-bottom: 1rem;
+  padding: 0 2rem;
   margin-bottom: auto;
   border-radius: 0 0 20px 20px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .menu {
   display: flex;
-  margin-top: auto;
-  // border: 1px solid red;
+  align-items: flex-end;
 }
+
+.logo {
+  padding-bottom: 3px;
+}
+.logo, .menu, .login {
+  margin-top: auto;
+}
+
+.login {
+  padding-bottom: 10px;
+}
+
+.user_comp {
+  display: flex;
+  align-items: center;
+}
+
+.user_comp a {
+  margin-right: 10px;
+  height: 100%;
+}
+
 .menu a {
   text-transform: uppercase;
-  padding: 0 10px 6px;
+  padding: 0 10px 8px;
 }
 
 .menu {
   a:hover, :active, :focus {
-    padding: 0 10px 3px;
+    padding: 0 10px 5px;
     border-bottom: 3px solid $c-contrast;
   }
 }
