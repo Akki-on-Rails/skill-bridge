@@ -1,0 +1,65 @@
+@import '../styles/colors.module.scss';
+@import '../styles/fonts.module.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.header_wrapper {
+  color: $c-background;
+  font-size: $b-font-size;
+  line-height: $b-line-height;
+  font-weight: $b-font-weight;
+  background-color: $c-secondary;
+  height: 75px;
+  padding: 0 2rem;
+  margin-bottom: auto;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo {
+  padding-bottom: 3px;
+}
+.logo, .menu, .login {
+  margin-top: auto;
+}
+
+.login {
+  padding-bottom: 10px;
+}
+
+.user_comp {
+  display: flex;
+  align-items: center;
+}
+
+.user_comp a {
+  margin-right: 10px;
+  height: 100%;
+}
+
+.menu a {
+  text-transform: uppercase;
+  padding: 0 10px 8px;
+}
+
+.menu {
+  a:hover, :active, :focus {
+    padding: 0 10px 5px;
+    border-bottom: 3px solid $c-contrast;
+  }
+}
+
+.menu {
+  a:active, :focus {
+    font-weight: 700;
+  }
+}
