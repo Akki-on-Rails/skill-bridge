@@ -3,6 +3,7 @@ import React from "react";
 import styles from './header.module.scss';
 import avatars from '../styles/avatars.module.scss';
 import buttons from '../styles/buttons.module.scss';
+import BurgerButton from './atoms/burgerButton'
 
 import "../assets/css/fontawesome.css"
 import "../assets/css/brands.css"
@@ -19,11 +20,14 @@ const Header = () => {
       {/* if > 100px show horizontal menu */}
       {/* else show burger menu */}
       <div className={styles.menu}>
-        <a href="#">student profile</a>
-        <a href="#">looking for jobs</a>
-        <a href="#">potential jobs</a>
-        <a href="#">resources</a>
-        <a href="#">contact</a>
+        <BurgerButton />
+        <ul>
+          <li><a href="#">student profile</a></li>
+          <li><a href="#">looking for jobs</a></li>
+          <li><a href="#">potential jobs</a></li>
+          <li><a href="#">resources</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
       </div>
       <div className={styles.login}>
         {/* here we need a switch/toggle */}

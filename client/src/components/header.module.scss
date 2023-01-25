@@ -21,8 +21,7 @@
 }
 
 .menu {
-  display: flex;
-  align-items: flex-end;
+  position: relative;
 }
 
 .logo {
@@ -33,7 +32,7 @@
 }
 
 .login {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .user_comp {
@@ -46,12 +45,18 @@
   height: 100%;
 }
 
-.menu a {
+.menu ul {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 6px;
+}
+
+ul a {
   text-transform: uppercase;
   padding: 0 10px 8px;
 }
 
-.menu {
+ul {
   a:hover, :active, :focus {
     padding: 0 10px 5px;
     border-bottom: 3px solid $c-contrast;
