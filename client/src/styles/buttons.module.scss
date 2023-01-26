@@ -8,6 +8,7 @@
   background: $c-primary;
   transition: background 0.3s ease;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .btn_flat:hover {
@@ -24,6 +25,7 @@
   transition: background 0.3s ease;
   border: 1px solid $c-secondary;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .btn_gradient:hover {

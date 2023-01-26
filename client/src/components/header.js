@@ -20,7 +20,6 @@ const Header = () => {
       {/* if > 100px show horizontal menu */}
       {/* else show burger menu */}
       <div className={styles.menu}>
-        <BurgerButton />
         <ul>
           <li><a href="#">student profile</a></li>
           <li><a href="#">looking for jobs</a></li>
