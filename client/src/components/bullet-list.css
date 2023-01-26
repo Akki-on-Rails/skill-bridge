@@ -1,0 +1,23 @@
+.componentLevel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parentStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.elementStyle {
+    background-color: beige;
+    border: 2px solid #ebebeb;
+    margin-top: 10px;
+    border-radius: 5px;
+    list-style-position:inside;
+    list-style-type: "\1F44D";
+    padding: 5px 5px 5px 5px;
+}
