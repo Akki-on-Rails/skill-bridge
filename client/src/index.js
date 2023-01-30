@@ -5,9 +5,8 @@ import './index.scss';
 import LoginCard from './components/login-card';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
-
-
 // import ImageComponent from './components/image-slider';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

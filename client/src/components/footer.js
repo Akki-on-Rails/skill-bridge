@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from './footer.module.scss';
 import buttons from '../styles/buttons.module.scss';
+
 import "../assets/css/fontawesome.css"
 import "../assets/css/brands.css"
 import "../assets/css/solid.css"
