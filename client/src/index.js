@@ -4,9 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import LoginCard from './components/login-card';
 import Footer from './components/footer';
-import Header from './components/header';
 import Navbar from './components/navbar';
-import Navbar2 from './components/navbar2';
 
 
 // import ImageComponent from './components/image-slider';
@@ -17,9 +15,7 @@ root.render(
   <React.StrictMode>
     <body>
       <div className={ 'body_wrapper' }>
-        {/* <Header /> */}
-        {/* <Navbar /> */}
-        <Navbar2 />
+        <Navbar />
         {/* <LoginCard /> */}
         {/* <ImageComponent /> */}
         <Footer />

@@ -16,10 +16,8 @@ const Navbar = () => {
   return (
     <nav className={styles.nav_wrapper}>
       <div className={styles.navigation}>
-      <a href="/" className={styles.brand_name}>
-        MacroSoft
-      </a>
-      <button className={styles.hamburger} onClick={() => {setIsNavExpanded(!isNavExpanded);}}>
+      <h1 className={styles.brand_name}>SkillBridge</h1>
+      <button className={styles.hamburger} onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
         {/* icon from heroicons.com */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,13 +32,12 @@ const Navbar = () => {
           />
         </svg>
       </button>
-      <div className={isNavExpanded ? styles.navigation_menu.expanded : styles.navigation_menu}>
+      <div className={isNavExpanded ? styles.navigation_expanded : styles.navigation_menu}>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">student profile</a></li>
+          <li><a href="#">look for jobs</a></li>
+          <li><a href="#">potential jobs</a></li>
+          <li><a href="#">resources</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
