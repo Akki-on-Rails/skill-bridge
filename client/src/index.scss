@@ -10,6 +10,7 @@ body {
   font-family: $body-font;
   box-sizing: border-box;
 	background-color: $c-background;
+  flex-grow: 1;
 }
 
 .body_wrapper {
@@ -22,6 +23,9 @@ body {
   border-right: 1.5rem solid $c-background;
   border-left: 1.5rem solid $c-background;
   border-bottom: 3rem solid $c-background;
+}
+.double_block {
+  display: flex;
 }
 
 code {

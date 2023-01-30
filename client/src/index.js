@@ -4,20 +4,24 @@ import './index.scss';
 import LoginCard from './components/login-card';
 import Footer from './components/footer';
 import Header from './components/header';
+import IntroBlock from './components/intro-block';
 import BulletListFeatures from './components/bullet-list';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <body>
-      <div className={ 'body_wrapper' }>
-        <Header />
+    <div className={ 'body_wrapper' }>
+      <Header />
+      <body>
+        <div className={ 'double_block' }>
+          <IntroBlock />
+        </div>
         <BulletListFeatures />
         {/* <LoginCard /> */}
-        <Footer />
-      </div>
-    </body>
+      </body>
+      <Footer />
+    </div>
   </React.StrictMode>
 );
 
