@@ -1,11 +1,13 @@
-const { default: mongoose } = require("mongoose");
+const { default: mongoose }=  require("mongoose")
 const Company = require('../models/companyModel')
+const jwt = require('jsonwebtoken')
+
 
 // get all companies
 const getCompanies = async (req, res) => {
 
-    const companies = await Company.find({}).sort({ createdAt: -1 })
-
+    const companies = await Company.find({}).sort({ createdAt: -1 }) // if we want specific ones we use company_ids
+    
     res.status(200).json(companies)
 }
 
@@ -32,8 +34,13 @@ const createCompany = async (req, res) => {
 
     // add doc to db
     const { name, industry, location, size, email, password } = req.body;
+
+        //handeling errors 
+        //still empty
+
     try {
-        const company = await Company.create({ name, industry, location, size, email, password })
+        const company_id=req.company._id
+        const company = await Company.create({ name, industry, location, size, email, password,company_id })
         res.status(200).json(company)
     } catch (error) {
         res.status(400).json({ error: error.message })
@@ -82,4 +89,46 @@ const updateCompany = async (req, res) => {
 }
 
 
-module.exports = { getCompanies, getCompany, createCompany, deleteCompany, updateCompany }
+//generating token function
+const createToken = (_id) => {
+
+    return jwt.sign({ _id }, process.env.SECRET, { expiresIn: '3d' })
+
+
+}
+//login company
+const loginCompany = async (req, res) => {
+   const{email,password}=req.body
+
+   try {
+    const company = await Company.login(email, password)
+
+    // create a token 
+    const token = createToken(company._id)
+
+    res.status(200).json({ email, token })
+} catch (error) {
+    res.status(400).json({ error: error.message })
+}
+
+
+}
+
+//signup company
+
+const signupCompany = async (req, res) => {
+    
+    const {name,industry,location,size, email, password } = req.body
+    try {
+        const company = await Company.signup( name, industry, location, size, email, password)
+
+        // create a token 
+        const token = createToken(company._id)
+
+        res.status(200).json({ email, token })
+    } catch (error) {
+        res.status(400).json({ error: error.message })
+    }
+}
+
+module.exports= { getCompanies, getCompany, createCompany, deleteCompany, updateCompany,signupCompany,loginCompany }
