@@ -15,6 +15,11 @@ function App() {
       <body>
         <div className={styles.double_block}>
           <IntroBlock />
+          <IntroBlock />
+          <div className={styles.left_item}>
+          </div>
+          <div className={styles.right_item}>
+          </div>
         </div>
         <ImageSlider />
         <BulletList />

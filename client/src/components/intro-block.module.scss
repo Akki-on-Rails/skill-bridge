@@ -1,0 +1,11 @@
+@import '../styles/colors.module.scss';
+@import '../styles/fonts.module.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.block_wrapper h2 {
+  margin-bottom: 1rem;
+}

@@ -1,40 +1,38 @@
 @import './styles/fonts.module.scss';
 @import './styles/colors.module.scss';
 
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100vw;
+  font-family: $body-font;
+  box-sizing: border-box;
+	background-color: $c-background;
+  flex-grow: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: $c-background;
+.body_wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  color: $c-text;
+  margin: 0 auto;
+  max-width: 1000px;
+  border-right: 1.5rem solid $c-background;
+  border-left: 1.5rem solid $c-background;
+  border-bottom: 3rem solid $c-background;
 }
 
-.App-link {
-  color: $c-primary;
+.double_block {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left_item {
+  flex-basis: 50%;
+}
+
+.right_item {
+  flex-basis: 50%;
 }
