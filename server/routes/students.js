@@ -18,7 +18,7 @@ router.post('/signupstudent', signupStudent)
 
 
 
-//using the middleware to protect all workout routes below
+//using the middleware to protect all routes below
 router.use(requireAuth)
 
 
