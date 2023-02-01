@@ -1,0 +1,19 @@
+.avatar_small {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar_large {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar_squared {
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+}
