@@ -2,7 +2,7 @@ import React from 'react';
 import "./bullet-list.css";
 
 
-function BulletListFeatures () {
+function BulletList () {
   return (
     <div className='componentLevel'>
       <h2>Job Search Features</h2>
@@ -22,4 +22,4 @@ function BulletListFeatures () {
   );
 };
 
-export default BulletListFeatures;
+export default BulletList;
