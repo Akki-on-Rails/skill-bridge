@@ -1,8 +1,21 @@
 const express = require('express')
-const { createCompany, getCompany, getCompanies, deleteCompany, updateCompany } = require('../controllers/companyController')
+const { createCompany, getCompany, getCompanies, deleteCompany, updateCompany } = require('../controllers/companyController') 
 const company = require('../models/companyModel')
+const requireAuth = require('../middleware/requireAuth')
 const router = express.Router()
 
+//controller functions
+const { signupCompany, loginCompany } = require('../controllers/companyController')
+
+//login route
+router.post('/logincompany', loginCompany)
+
+//singup route
+router.post('/signupcompany', signupCompany)
+
+
+//using the middleware to protect all workout routes below
+router.use(requireAuth)
 
 
 //GET all Companies 
@@ -18,6 +31,7 @@ router.delete('/:id', deleteCompany)
 
 //UPDATE a company
 router.patch('/:id', updateCompany)
+
 
 
 

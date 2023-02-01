@@ -1,11 +1,10 @@
 import React from "react";
 
-import styles from './footer.module.scss';
-import buttons from '../styles/buttons.module.scss';
-
-import "../assets/css/fontawesome.css"
-import "../assets/css/brands.css"
-import "../assets/css/solid.css"
+import styles from "./footer.module.scss";
+import button from "../styles/buttons.module.scss";
+import "../assets/css/fontawesome.css";
+import "../assets/css/brands.css";
+import "../assets/css/solid.css";
 
 const Footer = () => {
   return (
@@ -43,18 +42,29 @@ const Footer = () => {
         </div>
         <div className={styles.social}>
           <ul>
-            <li><i className="fa-brands fa-square-instagram" /></li>
-            <li><i className="fa-brands fa-square-snapchat" /></li>
-            <li><i className="fa-brands fa-twitch" /></li>
-            <li><i className="fa-brands fa-youtube" /></li>
+            <li>
+              <i className="fa-brands fa-square-instagram" />
+            </li>
+            <li>
+              <i className="fa-brands fa-square-snapchat" />
+            </li>
+            <li>
+              <i className="fa-brands fa-twitch" />
+            </li>
+            <li>
+              <i className="fa-brands fa-youtube" />
+            </li>
           </ul>
         </div>
       </div>
       <div className={styles.address}>
-        <p>SkillBridge GmbH  |  Musterstraße 34, 20034 Hamburg  |  Phone: 0123 456 789  |  Email: info@skillbridge.de</p>
-        <a className={buttons.btn_flat} href="#">
-        Sign up for free
-        {/* Here a Link to our Sign up page */}
+        <p>
+          SkillBridge GmbH | Musterstraße 34, 20034 Hamburg | Phone: 0123 456
+          789 | Email: info@skillbridge.de
+        </p>
+        <a className={button.btn_flat} href="#">
+          Sign up for free
+          {/* Here a Link to our Sign up page */}
         </a>
       </div>
 
@@ -63,11 +73,12 @@ const Footer = () => {
           <a href="#">Impressum</a>
           <a href="#">Datenschutz</a>
           <a href="#">AGB & Nutzungsbedingungen</a>
-        {/* For the copyright we need to insert the current year with js */}
-        © 2023 All Rights Reserved. Skillbridge</p>
+          {/* For the copyright we need to insert the current year with js */}©
+          2023 All Rights Reserved. Skillbridge
+        </p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

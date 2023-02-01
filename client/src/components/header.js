@@ -1,9 +1,9 @@
 import React from "react";
 
-import styles from './header.module.scss';
-import "../assets/css/fontawesome.css"
-import "../assets/css/brands.css"
-import "../assets/css/solid.css"
+import styles from "./header.module.scss";
+import "../assets/css/fontawesome.css";
+import "../assets/css/brands.css";
+import "../assets/css/solid.css";
 
 const Header = () => {
   return (
@@ -19,11 +19,9 @@ const Header = () => {
         <a href="#">resources</a>
         <a href="#">contact</a>
       </div>
-      <div className={styles.login}>
-
-      </div>
+      <div className={styles.login}></div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
