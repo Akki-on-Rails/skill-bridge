@@ -1,14 +1,17 @@
-import LoginCard from "./components/login-card"
-import Footer from "./components/footer"
-import Header from "./components/header"
+import React from "react";
+
+import LoginCard from "./components/login-card";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
+import styles from "./App.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <body>
-        <div className={"body_wrapper"}>
-          <Header />
-          <LoginCard />
+        <div className={styles.body_wrapper}>
+          <Navbar />
+          {/* <LoginCard /> */}
           <Footer />
         </div>
       </body>
