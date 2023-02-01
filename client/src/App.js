@@ -7,6 +7,7 @@ import styles from "./App.scss";
 import IntroBlock from "./components/intro-block";
 import ImageSlider from "./components/image-slider";
 import BulletList from "./components/bullet-list";
+import { Doughnut_Graph } from "./components/candidate_graphs";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </div>
         <ImageSlider />
         <BulletList />
+        <Doughnut_Graph />
+    
+ 
         {/* <LoginCard /> */}
       </body>
       <Footer />
