@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .parentStyle {
@@ -16,8 +18,13 @@
     background-color: beige;
     border: 2px solid #ebebeb;
     margin-top: 10px;
+    max-width: 80%;
     border-radius: 5px;
     list-style-position:inside;
     list-style-type: "\1F44D";
     padding: 5px 5px 5px 5px;
+}
+
+.elementStyle > p {
+    font-size: small;
 }

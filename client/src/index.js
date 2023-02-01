@@ -5,6 +5,7 @@ import LoginCard from './components/login-card';
 import Footer from './components/footer';
 import Header from './components/header';
 import reportWebVitals from './reportWebVitals';
+import BulletListFeatures from './components/bullet-list';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,8 @@ root.render(
     <body>
       <div className={ 'body_wrapper' }>
         <Header />
-        <LoginCard />
+        {/* <LoginCard /> */}
+        <BulletListFeatures/>
         <Footer />
       </div>
     </body>
