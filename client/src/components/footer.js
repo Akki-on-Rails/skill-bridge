@@ -1,9 +1,8 @@
 import React from "react"
-import { Link, useOutlet } from "react-router-dom"
 import { useLogout } from "../hooks/useLogout"
 import { useAuthContext } from "../hooks/useAuthContext"
 
-import styles from "./footer.module.scss"
+import styles from "../styles/components/footer.module.scss"
 import button from "../styles/buttons.module.scss"
 import "../assets/css/fontawesome.css"
 import "../assets/css/brands.css"

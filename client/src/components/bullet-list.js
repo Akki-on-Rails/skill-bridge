@@ -1,5 +1,5 @@
 import React from 'react';
-import "./bullet-list.css";
+import "../styles/components/bullet-list.css";
 
 
 function BulletList () {

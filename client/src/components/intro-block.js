@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from './intro-block.module.scss'
+import styles from '../styles/components/intro-block.module.scss'
 
 import "../assets/css/fontawesome.css"
 import "../assets/css/brands.css"
