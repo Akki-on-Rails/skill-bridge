@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../App.scss"
+import styles from "../styles/App.scss"
 
 // components
 import LoginCard from "../components/login-card"

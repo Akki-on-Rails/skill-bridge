@@ -9,7 +9,7 @@ import Signup from "./pages/Signup"
 
 import Footer from "./components/footer"
 import Navbar from "./components/navbar"
-import styles from "./App.scss"
+import styles from "./styles/App.scss"
 
 function App() {
   const { user } = useAuthContext()
