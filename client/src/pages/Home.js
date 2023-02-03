@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../App.scss"
+import styles from "../styles/App.scss"
 
 // components
 import LoginCard from "../components/login-card"
@@ -7,14 +7,19 @@ import IntroBlock from "../components/intro-block"
 import ImageSlider from "../components/image-slider"
 import BulletList from "../components/bullet-list"
 
-const Home = () => {
+
+function Home() {
+  const screenWidth = document.documentElement.clientWidth || window.innerWidth;
+  const doubleBlockStyles = () => {
+    return (
+      screenWidth <= 700 ? { display: 'flex' } : { display: 'block' }
+    )
+  }
   return (
     <body>
-      <div className={styles.double_block}>
+      <div style={{display: "flex"}}>
         <IntroBlock />
         <IntroBlock />
-        <div className={styles.left_item}></div>
-        <div className={styles.right_item}></div>
       </div>
       <ImageSlider />
       <BulletList />

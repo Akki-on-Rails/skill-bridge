@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import "./index.scss"
+import "./styles/index.scss"
 import App from "./App"
 import { AuthContextProvider } from './context/AuthContext'; // then we wrap it around the App component
 
