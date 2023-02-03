@@ -15,8 +15,8 @@ function ImageComponent() {
 
   return (
     <div style={{display:"flex", flexDirection:"row", justifyContent: "center", padding:"5vh"}}>
-      <div class="slider">
-          <div class="slides">
+      <div className="slider">
+          <div className="slides">
           <div id="slide-1"><img src={testbild1} style={{width:"100%"}}/></div>
           <div id="slide-2"><img src={testbild2} style={{width:"100%"}}/></div>
           <div id="slide-3"><img src={testbild3} style={{width:"100%"}}/></div>
