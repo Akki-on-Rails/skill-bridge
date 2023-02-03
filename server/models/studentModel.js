@@ -5,13 +5,13 @@ const validator = require('validator')
 
 const studentSchema = new Schema({
 
-    fName: {
+    name: {
         type: String,
         required: true
 
     },
     age: {
-        type: Number,
+        type: Date,
         required: true
 
     },
@@ -19,13 +19,19 @@ const studentSchema = new Schema({
         type: String,
 
     },
-    sStatus: {
+    status: {
         type: String,
 
     },
 
     email: {
         type: String,
+        required: true,
+        unique: true,
+
+    },
+    phone: {
+        type: Number,
         required: true,
         unique: true,
 
@@ -39,10 +45,10 @@ const studentSchema = new Schema({
 
 //static signup method
 
-studentSchema.statics.signup = async function (fName, age, location, sStatus,email, password) {
+studentSchema.statics.signup = async function (name, age, location,phone,email, password) {
 
     // validation
-    if (!email || !password) {
+    if (!email || !password || !name || !location || !age ||!phone) {
         throw Error('All fields must be filled')
     }
     if (!validator.isEmail(email)) {
@@ -60,7 +66,7 @@ studentSchema.statics.signup = async function (fName, age, location, sStatus,ema
     }
     const salt = await bcrypt.genSalt(10)
     const hash = await bcrypt.hash(password, salt)
-    const student = await this.create({fName, age, location, sStatus, email, password: hash })
+    const student = await this.create({name, age, location,phone,email, password:hash })
 
     return student
 }

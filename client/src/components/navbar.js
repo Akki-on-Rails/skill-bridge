@@ -87,7 +87,7 @@ const Navbar = () => {
         <div className={styles.user_comp}>
           {user && (
             <div>
-              <span>{user.email}</span>
+              <span> Hello {user.fName}</span>
               <img
                 className={avatars.avatar_small}
                 src="https://picsum.photos/id/64/200/300"
