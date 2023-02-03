@@ -17,7 +17,7 @@ function Home() {
   }
   return (
     <body>
-      <div style={{doubleBlockStyles}}>
+      <div style={{display: "flex"}}>
         <IntroBlock />
         <IntroBlock />
       </div>
