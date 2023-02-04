@@ -1,0 +1,45 @@
+@import './fonts.module.scss';
+@import './colors.module.scss';
+
+* {
+  margin: 0;
+}
+
+body {
+  // width: 100vw;
+  font-family: $body-font;
+  box-sizing: border-box;
+	background-color: $c-background;
+  flex-grow: 1;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.content_wrapper {
+  min-height: 100vh;
+}
+
+.pages_wrapper {
+  // max-width: 1000px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // margin: 0 auto;
+}
+
+.double_block {
+  display: flex;
+}
+
+.left_item {
+  width: 50%;
+  border: 1px solid red;
+}
+
+.right_item {
+  width: 50%;
+}

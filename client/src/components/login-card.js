@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import styles from './login-card.module.scss';
+import styles from '../styles/components/login-card.module.scss';
 import button from '../styles/buttons.module.scss';
 
 
