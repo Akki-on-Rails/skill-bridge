@@ -9,13 +9,29 @@
   transition: background 0.3s ease;
   white-space: nowrap;
   cursor: pointer;
+  height: fit-content;
 }
 
 .btn_flat:hover {
-  background: $c-primary-65;
+  background: $c-secondary;
   color: $c-background;
 }
 
+.btn_flat_light {
+  color: $c-background;
+  padding: 6px 18px;
+  border-radius: 4px;
+  background: $c-secondary;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.btn_flat_light:hover {
+  background: $c-tertiary;
+  color: $c-text-second;
+}
 .btn_gradient {
   color: $c-background;
   padding: 6px 18px;

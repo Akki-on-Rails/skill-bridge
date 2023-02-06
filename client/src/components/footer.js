@@ -72,7 +72,7 @@ const Footer = () => {
         </p>
         {/* conditional: only if user is not logged in  */}
         {!user && (
-          <a className={button.btn_flat} href="/signup">
+          <a className={button.btn_flat_light} href="/signup">
             Sign up for free
             {/* Here a Link to our Sign up page */}
           </a>
