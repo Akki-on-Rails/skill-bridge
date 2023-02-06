@@ -17,9 +17,9 @@ a {
 .footer_wrapper {
   color: $c-background;
   font-size: $b-font-size;
-  line-height: $b-line-height;
+  line-height: 1.9rem;
   font-weight: $b-font-weight;
-  background-color: $c-secondary;
+  background-color: $c-primary;
   height: 100%;
   padding: 1.5rem 2rem 1rem;
   // margin-bottom: 1rem;
@@ -29,7 +29,7 @@ a {
 .link_wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
 }
 
 .section_container {
@@ -37,25 +37,31 @@ a {
   display: grid;
   justify-content: start;
   justify-items: start;
-	grid-gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 2rem;
+	grid-gap: 1.8rem;
+  border: 1px solid red;
+
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 2.5rem;
  }
 
-/* Screen larger than 600px? 2 column */
-@media (min-width: 600px) {
+ .social {
+   width: 25%;
+ }
+/* Screen larger than 550px? 2 column */
+@media (min-width: 550px) {
+  .section_container { grid-template-columns: repeat(2, 1fr); }
+  .social { width: 25%; }
+}
+
+/* Screen larger than 750px? 3 columns */
+@media (min-width: 750px) {
   .section_container { grid-template-columns: repeat(3, 1fr); }
+  .social { width: 25%; }
 }
 
-/* Screen larger than 900px? 3 columns */
-@media (min-width: 900px) {
-  .section_container { grid-template-columns: repeat(4, 1fr); }
-}
-
-.social {
-  width: 25%;
-  font-size: 1.2rem;
-  line-height: 1.35rem;
+.social i {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 
 .footer_wrapper h4 {

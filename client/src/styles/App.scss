@@ -3,10 +3,10 @@
 
 * {
   margin: 0;
+  font-size: $b-font-size;
 }
 
 body {
-  // width: 100vw;
   font-family: $body-font;
   box-sizing: border-box;
 	background-color: $c-background;
@@ -33,13 +33,4 @@ body {
 
 .double_block {
   display: flex;
-}
-
-.left_item {
-  width: 50%;
-  border: 1px solid red;
-}
-
-.right_item {
-  width: 50%;
 }

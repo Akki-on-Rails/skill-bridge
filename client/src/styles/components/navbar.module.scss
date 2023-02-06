@@ -8,7 +8,8 @@
 .nav_wrapper {
   height: 75px;
   width: 100%;
-  background-color: $c-secondary;
+  background-color: $c-primary;
+  color: $c-text-contrast;
   border-radius: 0 0 20px 20px;
   display: flex;
   align-items: flex-end;
@@ -94,7 +95,7 @@
   width: 40px;
   padding: 0.5rem;
   border-radius: 4px;
-  background-color: $c-primary;
+  background-color: $c-secondary;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 // positions the icon to the right and center aligns it vertically
@@ -105,7 +106,7 @@
   display: none;
 }
 .hamburger:hover {
-  background-color: $c-primary-65;
+  background-color: $c-tertiary;
 }
 
 @media screen and (max-width: 1000px) {
@@ -126,7 +127,7 @@
    // makes menu span full height and width
     width: 200px;
     // height: calc(100vh - 77px);
-    background-color: $c-tertiary;
+    background-color: $c-gray-50;
     // display: none;
   }
   .navigation_expanded li {
@@ -135,14 +136,14 @@
     margin: 0;
   }
   .navigation_expanded li a {
-    color: $c-text;
+    color: $c-text-second;
     text-transform: uppercase;
     // increases the surface area of the anchor tag to span the full width of the menu
     width: 100%;
     // padding: 1.5rem 0;
   }
   .navigation_expanded li:hover {
-    background-color: $c-secondary;
+    background-color: $c-gray-100;
     border-bottom: 3px solid $c-contrast;
   }
   .navigation_expanded li a:hover {

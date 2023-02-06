@@ -1,8 +1,32 @@
-$c-primary: #1d3557;
-$c-secondary: #457b9d;
-$c-tertiary: #a8dadc;
-$c-background: #f1faee;
-$c-contrast: #EA483D;
-$c-text: #191919;
+// Main colors:
+$c-primary: #3358EB;
+$c-secondary: #90A4F3;
+$c-tertiary: #C7D1F9;
+$c-primary-10: #EDF1FD;
 
-$c-primary-65: rgba(29, 53, 87, 0.65);
+// Accent colors
+$c-contrast: #E86F4A;
+$c-contrast-75: #EC8C6F;
+$c-contrast-50: #F1A993;
+$c-contrast-25: #F8D3C9;
+
+$c-contrast-warn: #B53C17;
+$c-contrast-warn-2: #F8D3C9;
+
+// Background colors:
+$c-background: #FFF;
+$c-background-gray: #F2F2F2;
+
+// Font colors:
+$c-text: #262626;
+$c-text-second: #5E5E5E;
+$c-text-contrast: #FFF;
+
+// Greyscale:
+$c-gray-25: #F4F5F6;
+$c-gray-50: #DEE1E5;
+$c-gray-100: #C9CDD3;
+$c-gray-200: #B3BBC2;
+$c-gray-300: #9DA4B0;
+$c-gray-400: #88909F;
+$c-gray-500: #727C8D;

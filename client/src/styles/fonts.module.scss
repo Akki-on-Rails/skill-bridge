@@ -1,73 +1,64 @@
-// Font for headers etc. is:'Sofia Sans'
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
-// Font for text blocks etc. is: 'Lato'
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+// Font import from Google for: 'Montserrat'
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
 
-$header-font: 'Sofia Sans', sans-serif;
-$body-font: 'Lato', 'Calibri', sans-serif;
+$header-font: 'Montserrat', sans-serif;
+$body-font: 'Montserrat', 'Calibri', sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
 }
 
 
-$b-font-size: .8rem;
-$b-font-weight: 300;
-$b-line-height: 1.1rem;
+$b-font-size: .9rem;
+$b-font-weight: 500;
+$b-line-height: 1.3rem;
 
-h1, h6 {
-  font-weight: 900;
-}
+$body2-font-size: .8rem;
 
-h2, h5 {
-  font-weight: 800;
-}
-
-h3, h4 {
+h1, h2, h3, h4 {
   font-weight: 700;
 }
 
-h2, h4, h5 {
-  font-style: italic;
+h5, h6 {
+  font-weight: 600;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.8rem;
 }
 
 h2 {
-
-  font-size: 1.85rem;
-  font-style: italic;
+  font-size: 2.3rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
-
+// use h5 for Sublines/Subheaders!
 h5 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 h6 {
-  font-size: 0.75rem;
+  font-size: .75rem;
+  line-height: $b-line-height;
+  font-weight: $b-font-weight;
 }
 
 h1, h2, h3 {
-  line-height: 2.5rem;
+  line-height: 3.5rem;
 }
 
-
-h4, h5, h6 {
-  line-height: 1.25rem;
+h4, h5 {
+  line-height: 1.8rem;
 }
 
 strong {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 em {
