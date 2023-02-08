@@ -11,6 +11,7 @@ import buttons from "../styles/buttons.module.scss"
 import "../assets/css/fontawesome.css"
 import "../assets/css/brands.css"
 import "../assets/css/solid.css"
+import logo from "../images/logo2.png"
 
 const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
@@ -27,7 +28,10 @@ const Navbar = () => {
       <div className={styles.navigation}>
         <Link to="/">
           {" "}
-          <h1 className={styles.brand_name}>SkillBridge</h1>{" "}
+          <div className={styles.brand_name}>
+            <img src={logo} alt="The SkillBridge logo"></img>
+            <h1>SkillBridge</h1>{" "}
+          </div>
         </Link>
         <button
           className={styles.hamburger}
@@ -38,9 +42,9 @@ const Navbar = () => {
           {/* icon from heroicons.com */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="h-6 w-6"
             viewBox="0 0 20 20"
-            fill="white"
+            fill="#262626"
           >
             <path
               fillRule="evenodd"
