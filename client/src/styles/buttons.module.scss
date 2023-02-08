@@ -2,10 +2,10 @@
 @import '../styles/fonts.module.scss';
 
 .btn_flat {
-  color: $c-background;
+  color: $c-text-contrast;
   padding: 6px 18px;
   border-radius: 4px;
-  background: $c-primary;
+  background: $c-contrast;
   transition: background 0.3s ease;
   white-space: nowrap;
   cursor: pointer;
@@ -13,12 +13,12 @@
 }
 
 .btn_flat:hover {
-  background: $c-secondary;
-  color: $c-background;
+  background: $c-contrast-warn-hover;
+  color: $c-text-contrast;
 }
 
 .btn_flat_light {
-  color: $c-background;
+  color: $c-text;
   padding: 6px 18px;
   border-radius: 4px;
   background: $c-secondary;
