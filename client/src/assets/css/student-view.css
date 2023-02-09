@@ -1,0 +1,48 @@
+.btn-style {
+    margin-left: 10px;
+  }
+   
+  
+  .candidate-info-icons {
+    width: 30px;
+    height: auto;
+}
+  
+  .candidate-skill-icons {
+    width: 80px;
+    margin-right: 10vh;
+    margin-bottom: 5vh;
+    height: auto;
+    animation: skillAnzeige 2s linear
+  
+  }
+  
+  .candidate-skill-graph {
+    width: 100%;
+    margin-bottom: 5vh;
+    height: auto;
+  
+  }
+  
+  .candidate-timeline {
+    width: 60%;
+    margin-bottom: 5vh;
+    height: auto;
+  
+  }
+  
+  .candidate-cv {
+    width: 100%;
+    margin-bottom: 5vh;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.2);
+  }
+  
+  
+  
+  @keyframes skillAnzeige {
+    0%   {transform: rotate(0deg)}
+    100% {transform: rotate(359deg)}
+  }
+  
