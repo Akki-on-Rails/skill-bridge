@@ -51,8 +51,8 @@
 }
 
 .user_comp .login_link {
-  margin-right: 100px;
-  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-left: 1.5rem;
   color: $c-contrast;
   }
 
@@ -180,5 +180,8 @@
   }
   .navigation_expanded ul {
     display: block;
+  }
+  .user_comp .login_link {
+    margin-right: 75px;
   }
 }
