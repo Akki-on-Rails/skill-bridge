@@ -10,6 +10,7 @@ import Signup from "./pages/Signup"
 import Footer from "./components/footer"
 import Navbar from "./components/navbar"
 import styles from "./styles/App.scss"
+import StudentView from "./components/student-view"
 
 function App() {
   const { user } = useAuthContext()
@@ -33,6 +34,11 @@ function App() {
               <Route
                 path="/signup"
                 element={!user ? <Signup /> : <Navigate to="/" />}
+                />
+
+              <Route
+                path="/student-view"
+                element={!user ? <StudentView /> : <Navigate to="/" />}
                 />
             </Routes>
           </div>
