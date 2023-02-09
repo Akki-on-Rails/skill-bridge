@@ -7,6 +7,7 @@ import button from "../styles/buttons.module.scss"
 import "../assets/css/fontawesome.css"
 import "../assets/css/brands.css"
 import "../assets/css/solid.css"
+import logo from "../images/logo2.png"
 
 const Footer = () => {
   const { logout } = useLogout()
@@ -17,14 +18,17 @@ const Footer = () => {
   }
   return (
     <footer className={styles.footer_wrapper}>
-      <div className={styles.logo}>
-        {/* Here we need a Logo and/or Slogan */}
-        <h1>SkillBridge</h1>
-      </div>
+      {/* <Link to="/"> */}
+        {" "}
+        <div className={styles.brand_name}>
+          <img src={logo} alt="The SkillBridge logo"></img>
+          <h1>SkillBridge</h1>{" "}
+        </div>
+      {/* </Link> */}
       <div className={styles.link_wrapper}>
         <div className={styles.section_container}>
           <div className={styles.section_1}>
-            <h4>Students</h4>
+            <h3>Students</h3>
             <ul>
               <li>Student Profile</li>
               <li>Looking for Jobs</li>
@@ -32,7 +36,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.section_2}>
-            <h4>Company</h4>
+            <h3>Company</h3>
             <ul>
               <li>Company Profile</li>
               <li>Looking for Candidates</li>
@@ -40,7 +44,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.section_3}>
-            <h4>Other</h4>
+            <h3>Other</h3>
             <ul>
               <li>Contact</li>
               <li>FAQ</li>
@@ -67,12 +71,12 @@ const Footer = () => {
       </div>
       <div className={styles.address}>
         <p>
-          SkillBridge GmbH | Musterstraße 34, 20034 Hamburg | Phone: 0123 456
-          789 | Email: info@skillbridge.de
+          SkillBridge GmbH&emsp;|&emsp;Musterstraße 34, 20034 Hamburg&emsp;|&emsp;Phone: 0123 456
+          789&emsp;|&emsp;Email: info@skillbridge.de
         </p>
         {/* conditional: only if user is not logged in  */}
         {!user && (
-          <a className={button.btn_flat_light} href="/signup">
+          <a className={button.btn_flat} href="/signup">
             Sign up for free
             {/* Here a Link to our Sign up page */}
           </a>

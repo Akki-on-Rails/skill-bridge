@@ -6,20 +6,39 @@ a {
   &:focus,
   &:hover {
     color: $c-contrast;
+    font-weight: 700;
   }
-  color: $c-background;
+  color: $c-text;
 }
-// classes don't work
-.legal_section a {
+
+.brand_name {
+  color: $c-text;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+}
+
+.brand_name img {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.brand_name h1 {
+  font-size: 1.8rem;
+}
+
+.legal_section p, .legal_section a {
+  font-size: .7rem;
+  color: $c-text-second;
   padding-right: 15px;
+  margin: 2rem 0;
 }
 
 .footer_wrapper {
-  color: $c-background;
+  color: $c-text;
   font-size: $b-font-size;
-  line-height: 1.9rem;
   font-weight: $b-font-weight;
-  background-color: $c-primary;
+  background-color: $c-background;
   height: 100%;
   padding: 1.5rem 2rem 1rem;
   // margin-bottom: 1rem;
@@ -30,6 +49,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 1.8rem;
+  line-height: 1.9rem;
 }
 
 .section_container {
@@ -37,15 +57,18 @@ a {
   display: grid;
   justify-content: start;
   justify-items: start;
-	grid-gap: 1.8rem;
-  border: 1px solid red;
-
+	grid-gap: 2.5rem;
   grid-template-columns: repeat(1, 1fr);
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
  }
 
  .social {
    width: 25%;
+   color: $c-text-second;
  }
 /* Screen larger than 550px? 2 column */
 @media (min-width: 550px) {
@@ -74,5 +97,10 @@ ul {
 }
 .address {
   display: flex;
-  padding-bottom: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  p {
+    font-weight: 600;
+    font-size: .8rem;
+  }
 }
