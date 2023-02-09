@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/components/image-slider.css";
+import styles from"../styles/components/image-slider.module.scss";
 import testbild1 from '../images/testbildx.jpg';
 import testbild2 from '../images/testfeatures.jpg';
 import testbild3 from '../images/testbildy.jpg';
@@ -14,13 +14,12 @@ function ImageComponent() {
   };
 
   return (
-    <div style={{display:"flex", flexDirection:"row", justifyContent: "center", padding:"5vh"}}>
-      <div className="slider">
-          <div className="slides">
+    <div className={styles.slider_wrapper}>
+      <div className={styles.slider}>
+        <div className={styles.slides}>
           <div id="slide-1"><img src={testbild1} style={{width:"100%"}}/></div>
           <div id="slide-2"><img src={testbild2} style={{width:"100%"}}/></div>
           <div id="slide-3"><img src={testbild3} style={{width:"100%"}}/></div>
-
         </div>
         <a href="#slide-1"><img src={testbild1} style={{width:"100%"}}/></a>
         <a href="#slide-2"><img src={testbild2} style={{width:"100%"}}/></a>

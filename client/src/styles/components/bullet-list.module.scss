@@ -1,0 +1,33 @@
+@import '../colors.module.scss';
+@import '../fonts.module.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.component_wrapper {
+  padding: 2rem;
+  width: 100%;
+  background-color: $c-background;
+}
+
+.list_wrapper {
+  padding: 1rem 2.5rem 3rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  ul {
+    width: 100%;
+  }
+  li {
+    background-color: $c-gray-100;
+    display: block;
+    margin-top: .7rem;
+    // list-style-position:inside;
+    // list-style-type: "\1F44D";
+    padding: 1rem;
+  }
+  & > ul:first-of-type {
+    margin-right: 1rem;
+  }
+}
