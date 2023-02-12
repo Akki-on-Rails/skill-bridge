@@ -27,7 +27,11 @@
   min-width: 320px;
 }
 
-h2 span {
+.block_wrapper span {
   color: $c-primary;
-  display: block;
+  font-weight: 700;
+}
+
+.block_wrapper h5 {
+  margin: 2rem 0;
 }

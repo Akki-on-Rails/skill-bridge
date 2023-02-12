@@ -73,13 +73,13 @@ form {
   position: relative;
 }
 
-span {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  translate: 0 -50%;
-  color: rgba(255, 255, 255, 0.38);
-}
+// span {
+//   position: absolute;
+//   top: 50%;
+//   left: 16px;
+//   translate: 0 -50%;
+//   color: rgba(255, 255, 255, 0.38);
+// }
 
 input,
 button {
@@ -101,9 +101,9 @@ input:focus {
   border-color: #157ae1;
 }
 
-input:focus ~ span {
-  color: #157ae1;
-}
+// input:focus ~ span {
+//   color: #157ae1;
+// }
 
 // button {
 //   cursor: pointer;
