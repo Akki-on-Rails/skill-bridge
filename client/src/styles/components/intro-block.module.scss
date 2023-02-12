@@ -8,14 +8,23 @@
 
 .block_wrapper {
   margin: 2.5rem 1rem;
+  display: flex;
+  // position: relative;
+  height: min-content;
 }
 
-.block_wrapper h2 {
-  margin-bottom: 1rem;
+.text_wrapper {
+  // position: absolute;
+}
+.text_wrapper h2 {
+  margin-bottom: 3rem;
+  // max-width: 60%;
 }
 
-.block_wrapper p {
-  margin: 0 2.5rem;
+.block_wrapper img {
+  // position: absolute;
+  // right: 0;
+  min-width: 320px;
 }
 
 h2 span {
