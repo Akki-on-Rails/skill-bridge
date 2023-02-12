@@ -17,10 +17,11 @@ function Home() {
   }
   return (
     <body>
-      <div style={{display: "flex"}}>
+      {/* <div style={{display: "flex"}}>
         <IntroBlock />
         <IntroBlock />
-      </div>
+      </div> */}
+      <IntroBlock />
       <ImageSlider />
       <BulletList />
       {/* <LoginCard /> */}
