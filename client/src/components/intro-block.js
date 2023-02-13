@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef, useEffect, useState } from "react";
+import { useInView } from 'react-intersection-observer';
 
 import styles from '../styles/components/intro-block.module.scss'
 import buttons from "../styles/buttons.module.scss"
@@ -14,16 +14,8 @@ const spanStyle = {
 }
 
 const IntroBlock = () => {
-  const myRef = useRef();
-  const [infoElementIsVisible, setInfoElementIsVisible] = useState();
-  console.log('infoElementIsVisible', infoElementIsVisible)
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setInfoElementIsVisible(entry.isIntersecting)
-    })
-    observer.observe(myRef.current)
-  }, [])
+  const { ref: firstRef, inView: firstElementIsVisible } = useInView()
+  const { ref: thirdRef, inView: thirdElementIsVisible } = useInView()
 
   return (
     <div className={styles.intro_block_wrapper}>
@@ -37,7 +29,7 @@ const IntroBlock = () => {
         <img src={image}></img>
       </div>
       <ul>
-        <li className={styles.intro_text1}>
+        <li className={styles.slidein_left} ref={firstRef}>
           <h5>Hello and <span style={spanStyle}>welcome to SkillBridge</span>,
             a special website that helps you find the perfect job!
           </h5>
@@ -48,7 +40,7 @@ const IntroBlock = () => {
             your skills</span> and what you're good at.
           </h5>
         </li>
-        <li className={styles.intro_text3} ref={myRef}>
+        <li className={'${thirdElementIsVisible ? "styles.slidein_left" : "styles.intro_text3"}'} ref={thirdRef}>
           <h5>So don't wait any longer! <span style={spanStyle}>Join SkillBridge today</span> and see
             all the job opportunities waiting for you.
           </h5>

@@ -59,3 +59,27 @@ li:nth-child(2n) {
 .intro_text3 {
   justify-content: space-between;
 }
+
+.slidein_left {
+  justify-content: space-between;
+  transform: translateX(-100%);
+	opacity: 0;
+	animation: slide-in-anim 3s ease-out forwards;
+  // animation-delay: 1s;
+}
+
+@keyframes slide-in-anim {
+	30% {
+		opacity: 0;
+	}
+	// 75% {
+	// 	transform: translateX(-1%);
+	// }
+	// 87% {
+	// 	transform: translateX(-0.5%);
+	// }
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
