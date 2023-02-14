@@ -44,19 +44,15 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <a href="#">student profile</a>
+              <a href="#">Dashboard</a>
             </li>
             <li>
-              <a href="#">look for jobs</a>
+              {/* conditional: for if student or company is logged in */}
+              {/* either show 'Jobs' or 'Candidates' */}
+              <a href="#">Jobs</a>
             </li>
             <li>
-              <a href="#">potential jobs</a>
-            </li>
-            <li>
-              <a href="#">resources</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
+              <a href="#">Resources</a>
             </li>
           </ul>
         </div>
