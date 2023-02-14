@@ -15,6 +15,7 @@ const spanStyle = {
 
 const IntroBlock = () => {
   const { ref: firstRef, inView: firstElementIsVisible } = useInView()
+  const { ref: secondRef, inView: secondElementIsVisible } = useInView()
   const { ref: thirdRef, inView: thirdElementIsVisible } = useInView()
 
   return (
@@ -29,22 +30,24 @@ const IntroBlock = () => {
         <img src={image}></img>
       </div>
       <ul>
-        <li className={styles.slidein_left} ref={firstRef}>
+        <li className={firstElementIsVisible && styles.slide_in_left} ref={firstRef}>
           <h5>Hello and <span style={spanStyle}>welcome to SkillBridge</span>,
             a special website that helps you find the perfect job!
           </h5>
         </li>
-        <li className={styles.intro_text2}>
+        <li className={secondElementIsVisible && styles.slide_in_right} ref={secondRef}>
           <h5>We <span style={spanStyle}>do things differently</span> here. Instead of looking at your grades
             and past experiences, we <span style={spanStyle}>match you with companies based on
             your skills</span> and what you're good at.
           </h5>
         </li>
-        <li className={'${thirdElementIsVisible ? "styles.slidein_left" : "styles.intro_text3"}'} ref={thirdRef}>
-          <h5>So don't wait any longer! <span style={spanStyle}>Join SkillBridge today</span> and see
-            all the job opportunities waiting for you.
-          </h5>
-          <a href="#" className={buttons.btn_flat}>Sign up for free</a>
+        <li className={thirdElementIsVisible && styles.slide_in_left} ref={thirdRef}>
+          <div className={styles.intro_text3}>
+            <h5>So don't wait any longer! <span style={spanStyle}>Join SkillBridge today</span> and see
+              all the job opportunities waiting for you.
+            </h5>
+            <a href="#" className={buttons.btn_flat}>Sign up for free</a>
+          </div>
         </li>
       </ul>
     </div>
