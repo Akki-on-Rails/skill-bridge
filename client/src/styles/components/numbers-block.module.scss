@@ -3,14 +3,15 @@
 
 .numbers_component_wrapper {
   margin: 2rem 1rem 3rem;
+  padding: 2rem 0;
 
   h2 {
-    margin-bottom: 3rem;
+    margin: 4rem 0;
   }
 
   table, th:nth-child(n+2), td:nth-child(n+2) {
     border-left-width: 3px;
-    border-color: $c-gray-400;
+    border-color: $c-gray-100;
     border-style: solid;
     text-align: center;
     border-collapse: collapse;
@@ -28,8 +29,8 @@
 
   table {
     width: 100%;
-    padding: 0 1rem;
     border-style: hidden;
+    padding: 0 1rem;
   }
 
   th {

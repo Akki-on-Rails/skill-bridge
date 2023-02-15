@@ -23,7 +23,7 @@ const IntroBlock = () => {
       <div className={styles.block_wrapper}>
         <div className={styles.text_wrapper}>
           <h2>Find the <span style={spanStyle}>apprenticeship that fits your skillset</span>, not just your grades.</h2>
-          <a href="#" className={buttons.btn_flat}>&emsp;Sign up for free&emsp;</a>
+          <a href="#" className={buttons.btn_flat}>&emsp;&emsp;Sign up for free&emsp;&emsp;</a>
         </div>
         {/* Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> */}
         {/* Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a> */}

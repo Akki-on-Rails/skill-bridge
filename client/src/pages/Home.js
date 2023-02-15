@@ -7,7 +7,7 @@ import IntroBlock from "../components/intro-block"
 import ImageSlider from "../components/image-slider"
 import BulletList from "../components/bullet-list"
 import NumbersBlock from "../components/numbers-block"
-
+import RatingsPreview from "../components/ratings-preview"
 
 function Home() {
   // const screenWidth = document.documentElement.clientWidth || window.innerWidth;
@@ -18,11 +18,14 @@ function Home() {
   // }
   return (
     <body>
-      <IntroBlock />
-      <ImageSlider />
-      <BulletList />
-      <NumbersBlock />
-      {/* <LoginCard /> */}
+      <div className={styles.body_wrapper}>
+        <IntroBlock />
+        <ImageSlider />
+        <BulletList />
+        <NumbersBlock />
+        <RatingsPreview />
+        {/* <LoginCard /> */}
+      </div>
     </body>
   )
 }

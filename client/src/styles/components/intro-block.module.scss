@@ -10,6 +10,8 @@
   // display: flex;
   // flex-direction: column;
   margin: 0 1rem;
+  padding: 2rem 0;
+
 }
 
 .block_wrapper {
@@ -19,9 +21,13 @@
   height: min-content;
 }
 
-.text_wrapper h2 {
+.text_wrapper {
+  margin: 3rem 0;
+
+  h2 {
   margin-bottom: 3rem;
   // max-width: 60%;
+  }
 }
 
 .block_wrapper img {
@@ -76,7 +82,7 @@
   transform: translateX(100%);
 	opacity: 0;
 	animation: slide-in-anim 3s ease-out forwards;
-  animation-delay: 1s;
+  // animation-delay: 1s;
 }
 
 @keyframes slide-in-anim {

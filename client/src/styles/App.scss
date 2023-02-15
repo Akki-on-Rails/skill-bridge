@@ -9,8 +9,7 @@
 body {
   font-family: $body-font;
   box-sizing: border-box;
-	background-color: $c-gray-300;
-  flex-grow: 1;
+	background-color: $c-background;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
@@ -18,8 +17,8 @@ body {
   margin: 0 auto;
 }
 
-
 .content_wrapper {
+  background-color: red;
   min-height: 100vh;
 }
 
