@@ -83,7 +83,8 @@
 }
 
 .navigation_menu ul {
-  // display: flex;
+  display: flex;
+  flex-direction: row;
   padding: 0;
   margin-right: 1rem;
 }
@@ -131,7 +132,7 @@
 .hamburger:hover {
   color: $c-tertiary;
 }
-
+ 
 @media screen and (max-width: 1000px) {
   .hamburger {
     display: block;
