@@ -1,0 +1,45 @@
+@import '../colors.module.scss';
+@import '../fonts.module.scss';
+
+.numbers_component_wrapper {
+  margin: 2rem 1rem 3rem;
+  padding: 2rem 0;
+
+  h2 {
+    margin: 4rem 0;
+  }
+
+  table, th:nth-child(n+2), td:nth-child(n+2) {
+    border-left-width: 3px;
+    border-color: $c-gray-100;
+    border-style: solid;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  th:nth-child(n+2) {
+    border-bottom: 0px;
+    border-right: 0px;
+  }
+
+  td:nth-child(n+2) {
+    border-top: 0px;
+    border-right: 0px;
+  }
+
+  table {
+    width: 100%;
+    border-style: hidden;
+    padding: 0 1rem;
+  }
+
+  th {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $c-primary;
+  }
+
+  th > span {
+    color: $c-secondary;
+  }
+}

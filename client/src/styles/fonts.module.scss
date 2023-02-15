@@ -1,5 +1,6 @@
 // Font import from Google for: 'Montserrat'
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+@import './colors.module.scss';
 
 $header-font: 'Montserrat', sans-serif;
 $body-font: 'Montserrat', 'Calibri', sans-serif;
@@ -62,5 +63,5 @@ strong {
 }
 
 em {
-  font-style: italic;
+  color: $c-primary;
 }

@@ -11,6 +11,7 @@ import Footer from "./components/footer"
 import Navbar from "./components/navbar"
 import styles from "./styles/App.scss"
 import StudentView from "./components/student-view"
+import { red } from "@mui/material/colors"
 
 function App() {
   const { user } = useAuthContext()
