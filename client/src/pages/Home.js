@@ -4,7 +4,6 @@ import styles from "../styles/App.scss"
 // components
 import LoginCard from "../components/login-card"
 import IntroBlock from "../components/intro-block"
-import ImageSlider from "../components/image-slider"
 import BulletList from "../components/bullet-list"
 import NumbersBlock from "../components/numbers-block"
 import RatingsPreview from "../components/ratings-preview"
@@ -20,7 +19,6 @@ function Home() {
     <body>
       <div className={styles.body_wrapper}>
         <IntroBlock />
-        <ImageSlider />
         <BulletList />
         <NumbersBlock />
         <RatingsPreview />
