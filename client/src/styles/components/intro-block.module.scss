@@ -17,23 +17,38 @@
 .block_wrapper {
   margin: 2.5rem 0;
   display: flex;
-  // position: relative;
+  position: relative;
   height: min-content;
 }
 
-.text_wrapper {
-  margin: 3rem 0;
+// .intro_wrapper {
+//   margin: 3rem 0;
+//   position: relative;
 
-  h2 {
-  margin-bottom: 3rem;
-  // max-width: 60%;
+//   .text_wrapper {
+//     position: absolute;
+//   }
+// }
+
+.text_wrapper {
+  position: absolute;
+  top: 21vh;
+}
+
+.image_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+
+  img {
+    width: 50%;
+    margin-bottom: 5rem;
   }
 }
 
-.block_wrapper img {
-  // position: absolute;
-  // right: 0;
-  min-width: 320px;
+.text_wrapper h2 {
+margin-bottom: 3rem;
+max-width: 58%;
 }
 
 .block_wrapper span {
