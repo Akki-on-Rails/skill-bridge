@@ -1,5 +1,6 @@
 @import './fonts.module.scss';
 @import './colors.module.scss';
+@import '../styles/buttons.module.scss';
 
 * {
   margin: 0;
@@ -9,7 +10,7 @@
 body {
   font-family: $body-font;
   box-sizing: border-box;
-	background-color: $c-background;
+  background-color: $c-background;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
@@ -29,3 +30,46 @@ body {
   // justify-content: center;
   // margin: 0 auto;
 }
+
+// Signup.js styles 
+
+.signup-body {
+  display: flex;
+  direction: column;
+  flex-wrap: wrap;
+}
+.signup-body h1{
+  font-size:36px;
+}
+.signup-body h1 span{
+  color:$c-primary;
+}
+.signup-form-img {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.form-img {
+  flex-basis: 50%;
+}
+
+.form-img img {
+  max-width: 100%;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  background-color: $c-tertiary ;
+  border-radius: 10px;
+  margin: 20px 0px 20px 0px;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+
+ .signup-form button {
+  width: 100px;
+  border: 0;
+ }
