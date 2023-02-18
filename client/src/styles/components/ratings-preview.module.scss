@@ -17,4 +17,16 @@
 
 .ratings_carousel {
   border: 1px solid red;
+  display: flex;
+  i {
+    color: $c-primary;
+  }
+}
+
+.empty_stars > i {
+  color: $c-tertiary;
+}
+
+.review_card {
+  border: 1px solid red;
 }
