@@ -79,14 +79,13 @@
 }
 .navigation_menu {
   margin-left: auto;
-  // display: flex;
 }
 
 .navigation_menu ul {
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 .navigation_menu li {
   // removes default disc bullet for li tags and applies margin to left & right side
@@ -96,7 +95,7 @@
 .navigation_menu li a {
   // increases the surface area of the anchor tag to span more than just the anchor text
   text-decoration: none;
-  padding: 0 1rem 15px;
+  padding: 29px 1rem;
   display: block;
   width: 100%;
 }
@@ -104,7 +103,7 @@
   border-bottom: 3px solid $c-contrast;
   color: $c-contrast;
   font-weight: 700;
-  padding-bottom: 12px;
+  padding-bottom: 27px;
 }
 .navigation_menu li a:active {
   color: $c-background;
