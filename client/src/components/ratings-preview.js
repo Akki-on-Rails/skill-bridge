@@ -1,7 +1,9 @@
 import React from "react";
+import Slider from "react-slick";
 import buttons from "../styles/buttons.module.scss";
 
 import styles from '../styles/components/ratings-preview.module.scss';
+import Carousel from "./atoms/carousel";
 
 import "../assets/css/fontawesome.css";
 import "../assets/css/brands.css";
@@ -9,9 +11,21 @@ import "../assets/css/solid.css";
 import { ratingsData } from "../data/ratingsData.js";
 
 const RatingsPreview = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
     <div className={styles.ratings_component_wrapper}>
       <h2>Real People, Real Results. Have a look!</h2>
+
+      <Carousel />
+
+      {/* real elements for review component */}
       <div className={styles.ratings_carousel}>
         {ratingsData.map((entry) => {
           let stars =[]
