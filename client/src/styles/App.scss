@@ -38,15 +38,19 @@ body {
   direction: column;
   flex-wrap: wrap;
 }
-.signup-body h1{
-  font-size:36px;
+
+.signup-body h1 {
+  font-size: 36px;
 }
-.signup-body h1 span{
-  color:$c-primary;
+
+.signup-body h1 span {
+  color: $c-primary;
 }
+
 .signup-form-img {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
@@ -69,7 +73,48 @@ body {
   justify-content: space-between;
 }
 
- .signup-form button {
+.signup-form button {
   width: 100px;
   border: 0;
- }
+}
+
+.signup-form i {
+  position: absolute;
+}
+
+
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  color: rgba(0, 16, 44, 0.97);
+  min-width: 50px;
+  text-align: center;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form input[type="date"],
+.signup-form input[type="number"],
+.signup-form select {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+  
+}
+
+.signup-form p,
+.signup-form span {
+  color: gray;
+  font-size: 12px;
+}
