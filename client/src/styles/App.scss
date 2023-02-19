@@ -76,6 +76,7 @@ body {
 .signup-form button {
   width: 100px;
   border: 0;
+  margin-top: 10px
 }
 
 .signup-form i {
@@ -91,7 +92,7 @@ body {
 
 .icon {
   padding: 10px;
-  color: rgba(0, 16, 44, 0.97);
+  color: $c-text;
   min-width: 50px;
   text-align: center;
 }
@@ -110,11 +111,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: transparent;
   background: none;
   z-index: 1;
-  
+
 }
 
 .signup-form p,
 .signup-form span {
-  color: gray;
+  color: $c-text-second;
   font-size: 12px;
+}
+
+.sign-up-icon {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.confirm-checkbox {
+  margin-top: 10px
+}
+
+.confirm-checkbox span {
+  margin-left: 3px;
+  color: $c-text;
+
+}
+
+.confirm-checkbox a {
+  margin-left: 3px;
+  color: $c-primary;
+  text-decoration: underline;
 }

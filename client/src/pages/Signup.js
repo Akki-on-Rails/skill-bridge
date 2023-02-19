@@ -116,10 +116,10 @@ const Signup = () => {
           </field>
           <p>Password has to have at least 8 characters.</p>
           
-          <span> Sign up with</span>
-          <field>
+         <field> <span> Sign up with  </span> <i className="fa-brands fa-google  "/> <i class="fa-brands fa-apple sign-up-icon "/> </field>
+          <field className="confirm-checkbox">
           <input type="checkbox" />  
-          <span>I Confirm that I Understand and Agree to SkillBridge's Conditions </span> 
+          <span>I Confirm that I Understand and Agree to<a href="#">SkillBridge's Conditions</a> </span> 
 
           </field>
           <button className="btn_flat" disabled={isLoading}>
