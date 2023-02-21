@@ -26,11 +26,11 @@ const RatingsPreview = () => {
       <Carousel />
 
       {/* real elements for review component */}
-      <div className={styles.ratings_carousel}>
+      {/* <div className={styles.ratings_carousel}>
         {ratingsData.map((entry) => {
           let stars =[]
 
-          for (let i = 0; i < entry.rating; i++) {
+          for (let i = 0; i < entry.user.rating; i++) {
             stars.push(<i class="fa-solid fa-star"></i>)
           }
           while (stars.length < 5) {
@@ -39,14 +39,14 @@ const RatingsPreview = () => {
           return (
             <div key={entry.id} className={styles.review_card}>
               {/* {stars.map((star) => <span>{star}</span>)} */}
-              {stars}
+              {/* {stars}
               <p>{entry.comment}</p>
               <h3>{entry.name}</h3>
               <h5>{entry.title}</h5>
             </div>
           )
         })}
-      </div>
+      </div> */}
       <div className={styles.button_container}>
         <a href="#" className={buttons.btn_flat}>&emsp;&emsp;Sign up for free&emsp;&emsp;</a>
       </div>

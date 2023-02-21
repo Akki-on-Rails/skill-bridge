@@ -1,8 +1,8 @@
 @import '../colors.module.scss';
 @import '../fonts.module.scss';
 
-$slide-count: 5;
-$slide-width: 30rem;
+$slide-count: 4;
+$slide-width: 15rem;
 
 // html {
 //   box-sizing: border-box;
@@ -196,4 +196,8 @@ a {
             background: $c-primary;
         }
     }
+}
+
+.empty_stars > i {
+  color: $c-tertiary;
 }
