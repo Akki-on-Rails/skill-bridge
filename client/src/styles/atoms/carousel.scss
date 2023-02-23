@@ -37,8 +37,7 @@ a {
 
 .carousel__wrap {
     // TODO: REMOVE RED BORDER!
-    border: 1px solid red;
-    margin-top: 10%;
+    border: 1px solid green;
     align-items: center;
     display: flex;
     flex: 1;
@@ -50,7 +49,7 @@ a {
 }
 
 .carousel__inner {
-    height: 40rem;
+    height: 22rem;
     position: relative;
     width: calc(#{$slide-width * 3});
 }
@@ -60,6 +59,8 @@ a {
     overflow: hidden;
     position: relative;
     width: 100%;
+    // TODO: REMOVE RED BORDER!
+    border: 1px solid red;
 }
 
 .carousel__slide-list {
@@ -81,56 +82,73 @@ a {
     position: absolute;
     transition: all 0.3s;
     width: $slide-width;
+    // TODO: REMOVE RED BORDER!
+    border: 1px solid orange;
 }
 
-.carousel__slide-item-img-link {
-    cursor: zoom-in;
-    display: flex;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+// .carousel__slide-item-img-link {
+//     cursor: zoom-in;
+//     display: flex;
+//     height: 100%;
+//     overflow: hidden;
+//     position: relative;
+//     width: 100%;
 
-    // img {
-    //     height: 100%;
-    //     object-fit: cover;
-    //     transition: all 0.5s ease;
-    //     width: 100%;
-    // }
+//     // img {
+//     //     height: 100%;
+//     //     object-fit: cover;
+//     //     transition: all 0.5s ease;
+//     //     width: 100%;
+//     // }
 
-    &::after {
-        align-items: center;
-        background: rgba(black, 0.5);
-        color: white;
-        content: 'read more';
-        display: flex;
-        height: 100%;
-        justify-content: center;
-        opacity: 0;
-        position: absolute;
-        transition: all 0.5s ease;
-        width: 100%;
-    }
+//     &::after {
+//         align-items: center;
+//         background: rgba(black, 0.5);
+//         color: white;
+//         content: 'read more';
+//         display: flex;
+//         height: 100%;
+//         justify-content: center;
+//         opacity: 0;
+//         position: absolute;
+//         transition: all 0.5s ease;
+//         width: 100%;
+//     }
 
-    &:hover {
-        &::after {
-            opacity: 1;
-        }
+//     &:hover {
+//         &::after {
+//             opacity: 1;
+//         }
 
-        img {
-            transform: scale(1.3);
-        }
-    }
-}
+//         img {
+//             transform: scale(1.3);
+//         }
+//     }
+// }
 
 .carousel-slide-item__body {
-    bottom: -2.5rem;
+    // bottom: -2.5rem;
+    top: 0;
     height: 10%;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     h4 {
-        margin: 1rem 0 0;
-        text-transform: uppercase;
+      margin-bottom: 1rem;
+      letter-spacing: .6rem;
+      color: $c-primary;
+    }
+    h3, h5 {
+      color: $c-primary;
+      margin: 0;
+      padding: 0;
+    }
+
+    h5 {
+      margin: 0;
+      padding: 0;
     }
 
     p {
