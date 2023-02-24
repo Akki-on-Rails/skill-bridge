@@ -20,7 +20,7 @@ const getStudent = async (req, res) => {
 
         return res.status(404).json({ error: 'No such student' })
     }
-    const student = await Student.findById(id)
+    const student = await Student.findById(id).select('-password')
 
     if (!student) {
         return res.status(404).json({ error: "No such student" })
@@ -103,15 +103,15 @@ const createToken = (_id) => {
 }
 //login student
 const loginStudent = async (req, res) => {
-    const { email, password } = req.body
+    const { email, password} = req.body
 
     try {
         const student = await Student.login(email, password)
 
         // create a token 
         const token = createToken(student._id)
-
-        res.status(200).json({ email, token })
+        const id = student._id
+        res.status(200).json({ email, token,id})
     } catch (error) {
         res.status(400).json({ error: error.message })
     }
