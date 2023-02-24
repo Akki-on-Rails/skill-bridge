@@ -5,10 +5,13 @@
   box-sizing: border-box;
 }
 
-.component_wrapper {
-  padding: 2rem;
+.bullet_wrapper {
   width: 100%;
-  background-color: $c-background;
+  margin: 0 2rem;
+
+  h2 {
+    margin: 4rem 0;
+  }
 }
 
 .list_wrapper {
