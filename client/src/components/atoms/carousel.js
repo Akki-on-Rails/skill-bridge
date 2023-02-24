@@ -18,15 +18,6 @@ const sleep = (ms = 0) => {
 };
 
 const createItem = (position, idx) => {
-  // {ratingsData.map((entry) => {
-  //   let stars =[]
-
-  //   for (let i = 0; i < entry.user.rating; i++) {
-  //     stars.push(<i class="fa-solid fa-star"></i>)
-  //   }
-  //   while (stars.length < 5) {
-  //     stars.push( <span className={styles.empty_stars}><i class="fa-solid fa-star"></i></span>)
-  //   }
 
     const item = {
         styles: {
@@ -39,7 +30,7 @@ const createItem = (position, idx) => {
     switch (position) {
         case length - 1:
         case length + 1:
-            item.styles = {...item.styles, filter: 'grayscale(1)'};
+            // item.styles = {...item.styles, filter: 'grayscale(1)'};
             break;
         case length:
             break;
@@ -53,25 +44,28 @@ const createItem = (position, idx) => {
 
 const CarouselSlideItem = ({pos, idx, activeIdx}) => {
     const item = createItem(pos, idx, activeIdx);
+    // translating the rating value from an integer into star icons
     const stars =[]
 
     for (let i = 0; i < item.rating; i++) {
       stars.push(<i class="fa-solid fa-star"></i>)
     }
     while (stars.length < 5) {
+      // calculating the remaining stars if rating < 5
       stars.push( <span className="empty_stars"><i class="fa-solid fa-star"></i></span>)
     }
 
     return (
         <li className="carousel__slide-item" style={item.styles}>
-            {/* <div className="carousel__slide-item-img-link">
-                <img src={item.user.image} alt={item.user.title} />
-            </div> */}
             <div className="carousel-slide-item__body">
-              <h4>{stars}</h4>
-              <p>{item.user.comment}</p>
-              <h3>{item.user.name}</h3>
-              <h5>{item.user.title}</h5>
+              <div className="top_text">
+                <h4>{stars}</h4>
+                <p>{item.user.comment}</p>
+              </div>
+              <div className="bottom_text">
+                <h3>{item.user.name}</h3>
+                <h5>{item.user.title}</h5>
+              </div>
             </div>
         </li>
     );
