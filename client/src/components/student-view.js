@@ -62,7 +62,11 @@ function StudentView(props) {
     { skillName: "Teamwork", wertung: 80 },
     { skillName: "Leadership", wertung: 60 },
   ])
-
+// formatting the date
+  const getFormattedDate = (dateStr) => {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString();
+  }
  
   return (
     <Grid
@@ -112,7 +116,7 @@ function StudentView(props) {
             >
               <img className="candidate-info-icons" src={cake} />
               <p style={{ marginLeft: "10px", marginRight: "30px" }}>
-              {studentData?.age}
+              {getFormattedDate (studentData?.age)}
               </p>
             </Grid>
             <Grid
