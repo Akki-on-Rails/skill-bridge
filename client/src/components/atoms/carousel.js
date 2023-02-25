@@ -48,11 +48,11 @@ const CarouselSlideItem = ({pos, idx, activeIdx}) => {
     const stars =[]
 
     for (let i = 0; i < item.rating; i++) {
-      stars.push(<i class="fa-solid fa-star"></i>)
+      stars.push(<i className="fa-solid fa-star"></i>)
     }
     while (stars.length < 5) {
       // calculating the remaining stars if rating < 5
-      stars.push( <span className="empty_stars"><i class="fa-solid fa-star"></i></span>)
+      stars.push( <span className="empty_stars"><i className="fa-solid fa-star"></i></span>)
     }
 
     return (
