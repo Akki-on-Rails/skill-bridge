@@ -21,8 +21,10 @@
   align-items: center;
 
   p {
-    display: none;
     opacity: 0;
+    // transform: scale(0);
+    // display: none;
+    height: 0;
   }
 }
 
@@ -53,7 +55,7 @@ ul {
   border-radius: 10px;
   width: 260px;
   height: auto;
-  transition: width 300ms ease-in-out;
+  // transition: width 300ms ease-in-out;
 
   ul {
     flex-direction: column-reverse;
@@ -70,8 +72,10 @@ ul {
   p {
     display: block;
     opacity: 1;
-    transition: opacity 2s ease-out;
-    transition-delay: 300ms;
+    transition: opacity 1ms ease-in;
+    // transition-delay: 150ms;
+    transform: scale(1);
+    height: auto;
   }
 }
 .list_wrapper {
