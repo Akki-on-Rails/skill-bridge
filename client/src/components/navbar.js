@@ -64,13 +64,16 @@ const Navbar = () => {
 
           <div className={styles.user_comp}>
             {user && (
+              
               <div>
-                <span> Hello {user.fName}</span>
-                <img
+               <Link to="/student-profile" > <i class="fa-solid fa-user"></i> My Profile | </Link>
+
+                <span> {user.email}</span>
+                {/* <img
                   className={avatars.avatar_small}
                   src="https://picsum.photos/id/64/200/300"
                   alt="user avatar"
-                ></img>
+                ></img> */}
                 <button className={buttons.btn_flat} onClick={handleClick}>
                   Log out
                 </button>
@@ -82,6 +85,8 @@ const Navbar = () => {
                 <Link to="/login" className={styles.login_link}> Log in</Link>
               </div>
             )}
+
+            
           </div>
         </div>
         <button
