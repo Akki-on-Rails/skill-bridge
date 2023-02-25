@@ -11,7 +11,7 @@ import { ratingsData } from "../../data/ratingsData.js";
 const slideWidth =15;
 
 const length = ratingsData.length;
-ratingsData.push(...ratingsData);
+const Arr = [...ratingsData];
 
 const sleep = (ms = 0) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -23,9 +23,11 @@ const createItem = (position, idx) => {
         styles: {
             transform: `translateX(${position * slideWidth}rem)`,
         },
-        user: ratingsData[idx].user,
-        rating: ratingsData[idx].user.rating,
+        user: Arr[idx].user,
+        rating: Arr[idx].user.rating,
     };
+    console.log(position)
+    console.log(Arr.length)
 
     switch (position) {
         case length - 1:
@@ -35,7 +37,7 @@ const createItem = (position, idx) => {
         case length:
             break;
         default:
-            item.styles = {...item.styles, opacity: 0};
+            // item.styles = {...item.styles, opacity: 0};
             break;
     }
 

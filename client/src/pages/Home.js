@@ -2,11 +2,10 @@ import React from "react"
 import styles from "../styles/App.scss"
 
 // components
-import LoginCard from "../components/login-card"
 import IntroBlock from "../components/intro-block"
 import BulletList from "../components/bullet-list"
 import NumbersBlock from "../components/numbers-block"
-import RatingsPreview from "../components/ratings-preview"
+// import RatingsPreview from "../components/ratings-preview"
 
 function Home() {
   // const screenWidth = document.documentElement.clientWidth || window.innerWidth;
@@ -21,8 +20,7 @@ function Home() {
         <IntroBlock />
         <BulletList />
         <NumbersBlock />
-        <RatingsPreview />
-        {/* <LoginCard /> */}
+        {/* <RatingsPreview /> */}
       </div>
     </body>
   )
