@@ -2,7 +2,8 @@ import React from 'react';
 import { useState} from 'react';
 import "../assets/css/student-view.css"
 import Grid from '@mui/material/Grid';
-
+import { Typography } from '@mui/material';
+import SkillsChart from '../data/skills-graph';
 
 import license from "../images/driver-license.png"
 import mail from "../images/mail.png"
@@ -19,28 +20,33 @@ import calendar from "../images/calendar.png"
 import work from "../images/work.png"
 import university from "../images/university.png"
 
-import { Typography } from '@mui/material';
-
-
 
 function StudentView () {
+
+    
+    const [skills, setSkills] = useState([
+      {skillName: "Time Management", wertung: 85}, 
+      {skillName: "Problem solving", wertung: 75},
+      {skillName: "Communication", wertung: 80},
+      {skillName: "Adabtability", wertung: 70},
+      {skillName: "Teamwork", wertung: 80},
+      {skillName: "Leadership", wertung: 60}
+    ]);
+
+    const [interests, setInterests] = useState([
+      {skillName: "Marketing", wertung: 90}, 
+      {skillName: "Social Media", wertung: 85},
+      {skillName: "Entrepreneurship", wertung: 80},
+      {skillName: "Graphic Design", wertung: 80},
+      {skillName: "Event planning", wertung: 70},
+      {skillName: "Photography", wertung: 60}
+    ]);
+
   
   const [studentName, setStudentName] = useState("Name of Candidate")
   const [nameChange, setNameChange] = useState(false)
 
-  const [skills, setSkills] = useState([
-    {skillName:"Time Management",
-    wertung: 85}, 
-    {skillName:"Problem solving",
-    wertung: 75},
-    {skillName:"Communication",
-    wertung: 80},
-    {skillName:"Adabtability",
-    wertung: 70},
-    {skillName:"Teamwork",
-    wertung: 80},
-    {skillName:"Leadership",
-    wertung: 60}])
+ 
 
   function nameChangeActive() {
     setNameChange(!nameChange)
@@ -124,14 +130,17 @@ function StudentView () {
     <Grid item xs={12} sx= {{backgroundColor:"#F4F5F6", padding:"15px", borderRadius:"10px"}}>
       
       <Grid item container xs={12} sx={{display:"flex",justifyContent:"space-between"}}>
-      {skills.map((i)=>{
+      {/* {skills.map((i)=>{
         return(
           <Grid item xs={5} sx={{display:"flex", flexDirection:"column"}}>
                 <Typography>{i.skillName}</Typography>
                 <Grid sx={{backgroundColor:"#AFBDF8"}}>{i.wertung}%</Grid>
           </Grid>
         )
-      })}
+      })} */}
+      <SkillsChart skills={skills} />
+
+
       </Grid>
 {/* 
     <Grid sx={{display:"flex", flexDirection:"row", alignItems:"center"}}>
@@ -156,14 +165,16 @@ function StudentView () {
     <Grid item xs={12} sx= {{backgroundColor:"#F4F5F6", padding:"15px", borderRadius:"10px"}}>
       
       <Grid item container xs={12} sx={{display:"flex",justifyContent:"space-between"}}>
-          {skills.map((i)=>{
+          {/* {skills.map((i)=>{
             return(
               <Grid item xs={12} sx={{display:"flex", flexDirection:"column"}}>
                     <Typography>{i.skillName}  {i.wertung}%</Typography>
                     <Grid sx={{backgroundColor:"#AFBDF8"}}><Typography sx={{color:"rgba(0,0,0,0)"}}>blabla</Typography></Grid>
               </Grid>
             )
-          })}
+          })} */}
+              <SkillsChart skills={interests} />
+
           </Grid>
    
         </Grid>
