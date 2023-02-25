@@ -6,7 +6,9 @@
   margin: 0;
   // font-size: $b-font-size;
 }
-
+a{
+  text-decoration: none;
+}
 body {
   font-family: $body-font;
   box-sizing: border-box;
