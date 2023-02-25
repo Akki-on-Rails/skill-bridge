@@ -21,6 +21,7 @@ import university from "../images/university.png"
 import { Typography } from "@mui/material"
 
 import { useAuthContext } from "../hooks/useAuthContext"
+import SkillsChart from "../data/skill-graph"
 // import { AuthContext } from "../context/AuthContext"
 // import { useContext } from "react"
 
@@ -61,6 +62,15 @@ function StudentView(props) {
     { skillName: "Adabtability", wertung: 70 },
     { skillName: "Teamwork", wertung: 80 },
     { skillName: "Leadership", wertung: 60 },
+  ])
+
+  const [interests, setInterests] = useState([
+    { skillName: "Marketing", wertung: 85 },
+    { skillName: "Social Media", wertung: 75 },
+    { skillName: "Entrepreneurship", wertung: 80 },
+    { skillName: "Graphic Design", wertung: 70 },
+    { skillName: "Event planning", wertung: 80 },
+    { skillName: "Photography", wertung: 60 },
   ])
 // formatting the date
   const getFormattedDate = (dateStr) => {
@@ -311,7 +321,7 @@ function StudentView(props) {
                 xs={12}
                 sx={{ display: "flex", justifyContent: "space-between" }}
               >
-                {skills.map((i) => {
+                {/* {skills.map((i) => {
                   return (
                     <Grid
                       item
@@ -324,7 +334,8 @@ function StudentView(props) {
                       </Grid>
                     </Grid>
                   )
-                })}
+                })} */}
+                <SkillsChart skills={skills}/>
               </Grid>
               {/* 
     <Grid sx={{display:"flex", flexDirection:"row", alignItems:"center"}}>
@@ -369,7 +380,7 @@ function StudentView(props) {
                 xs={12}
                 sx={{ display: "flex", justifyContent: "space-between" }}
               >
-                {skills.map((i) => {
+                {/* {skills.map((i) => {
                   return (
                     <Grid
                       item
@@ -386,7 +397,8 @@ function StudentView(props) {
                       </Grid>
                     </Grid>
                   )
-                })}
+                })} */}
+                <SkillsChart skills={interests}/>
               </Grid>
             </Grid>
           </Grid>
