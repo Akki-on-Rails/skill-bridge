@@ -6,9 +6,11 @@
   margin: 0;
   // font-size: $b-font-size;
 }
+
 a{
   text-decoration: none;
 }
+
 body {
   font-family: $body-font;
   box-sizing: border-box;
@@ -33,7 +35,7 @@ body {
   // margin: 0 auto;
 }
 
-// Signup.js styles 
+// Signup.js styles
 
 .signup-body {
   display: flex;
