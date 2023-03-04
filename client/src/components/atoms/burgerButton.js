@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from './burgerButton.module.scss';
+import styles from '../../styles/atoms/burgerButton.module.scss';
 
 const BurgerButton = () => {
   return (
