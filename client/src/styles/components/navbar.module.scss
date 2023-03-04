@@ -50,6 +50,13 @@
   font-weight: 500;
 }
 
+.user_comp span {
+  font-size: 13px;
+  margin-right: 4px;
+  font-weight: lighter;
+  color:$c-contrast;
+}
+
 .user_comp .login_link {
   margin-right: 1rem;
   margin-left: 1.5rem;
@@ -184,4 +191,5 @@
   .user_comp .login_link {
     margin-right: 75px;
   }
+
 }

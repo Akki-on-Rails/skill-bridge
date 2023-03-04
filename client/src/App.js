@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate } from "react-router-dom"
 import { useAuthContext } from "./hooks/useAuthContext"
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 //pages and components
 import Home from "./pages/Home"
@@ -10,11 +10,12 @@ import Signup from "./pages/Signup"
 import Footer from "./components/footer"
 import Navbar from "./components/navbar"
 import styles from "./styles/App.scss"
-import StudentView from "./components/student-view"
+import StudentProfile from "./pages/StudentProfile"
 import { red } from "@mui/material/colors"
 
 function App() {
   const { user } = useAuthContext()
+ 
   return (
     <div className={styles.content_wrapper}>
       <BrowserRouter>
@@ -38,8 +39,9 @@ function App() {
                 />
 
               <Route
-                path="/student-view"
-                element={!user ? <StudentView /> : <Navigate to="/" />}
+                path="/student-profile"
+                // element = {<StudentProfile/>}
+                element={user? <StudentProfile /> : <Navigate to="/" />}
                 />
             </Routes>
           </div>
