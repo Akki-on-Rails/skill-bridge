@@ -10,7 +10,7 @@ SkillBridge is an online platform that enables young adults to find the perfect 
 Fundament of the WerbDev work was the wireframes provided by the UX team members. 
 The Web-Application was built with the MERN stack (MongoDB, Express, React, and Node) completed by SCSS.
 
-![SkillBridge root page](https://share.getcloudapp.com/L1uDkxyj)
+![SkillBridge root page](https://github.com/Akki-on-Rails/skill-bridge/blob/master/client/src/images/SkillBridge-rootpage.gif)
 
 Project scope was the creation of:
 - root page
